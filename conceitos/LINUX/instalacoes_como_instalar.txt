@@ -1,0 +1,4 @@
+instalar : {
+  deb: `pacotes .deb instalar :: sudo dpkg -i <nome_do_pacote>.deb`,
+
+}

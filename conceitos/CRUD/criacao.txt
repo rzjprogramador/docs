@@ -1,0 +1,17 @@
+criacao_obj_entidade = {
+  hard_code: {
+    cenario: 'dentro de uma funcao',
+    objetivo: 'criar objeto de uma entidade',
+
+    passos: {
+      cenario_dos_passos: [ 'criarObjeto', 'guardarEmColecao', 'tornarPublico', ],
+
+      criarObjetoEntidade: 'um objeto com os campos preenchido e capturar e referenciar',
+
+      guardar_em_colecao: chamar a variavel do banco e pushar pra dentro o objetoentidadecriado,
+
+      tornar_publico_a_criacao: 'return objetoEntidadeCriado'
+
+    },
+  },
+}

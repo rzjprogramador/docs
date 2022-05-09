@@ -1,0 +1,10 @@
+
+comandos_use_prisma = {
+  conceito: `no lugar de yarn pode usar npx se tiver usando npm`,
+  formatar_models: `yarn prisma format`,
+  resetar_banco: `yarn prisma migrate reset`,
+  rodar_seed: `yarn prisma db seed`,
+  versionamento: `yarn prisma migrate dev`,
+  interface_banco_prisma: `yarn prisma studio`,
+  mostra_todos_comandos_de_migracao: `yarn prisma migrate`,
+}

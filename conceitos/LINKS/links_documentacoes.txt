@@ -1,0 +1,3 @@
+doc_nest: {
+  configuracoes_na_app_nest: `https://docs.nestjs.com/techniques/configuration`,
+}

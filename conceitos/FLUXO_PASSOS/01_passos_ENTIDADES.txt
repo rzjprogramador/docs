@@ -1,0 +1,9 @@
+
+passosentidadeObjeto = {
+  estruturasEntidade: {
+    model_prisma: `criar o model no prisma`,
+    module: `criar o modulo no nest`,
+    classe: `criar a classe mapeada Ts - GraphQL`,
+    bancoDados: `automaticamente o prisma cria a tabela no banco de dados- pode acompanhar no DBeaver e Prisma Studio`
+  }
+}

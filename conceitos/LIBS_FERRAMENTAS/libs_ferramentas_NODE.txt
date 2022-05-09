@@ -1,0 +1,9 @@
+libs_ferramentas_do_NODE: {
+  crypto: {
+    nome: 'crypto',
+    importacao: 'import crypto from 'crypto'',
+    funcoes_da_ferramenta: {
+      criar_id__aleatorio: `prop: crypto.randomUUID()`,
+    }
+  }
+}

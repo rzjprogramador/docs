@@ -1,0 +1,4 @@
+br_dev: {
+  nome: 'BR DEV',
+  link: `https://github.com/codigofalado/brdev`,
+}

@@ -1,0 +1,10 @@
+
+extensoes_vscode: {
+postgres: {
+  nome: 'PostgreSQL',
+  contexto: 'Interface grafica para banco de dados com SGBD Postgres',
+  install: 'cweijan.vscode-postgresql-client2',
+  doc: 'https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-postgresql-client2',
+}
+
+}
