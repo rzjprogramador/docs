@@ -1,0 +1,9 @@
+install_dev_desenvolvimento: {
+  para_tests: {
+    nome: 'jest',
+    instalar: 'yarn add -D jest',
+    detalhes: ``,
+  },
+
+}
+
