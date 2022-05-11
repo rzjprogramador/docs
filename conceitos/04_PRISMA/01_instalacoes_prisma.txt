@@ -1,0 +1,7 @@
+instalacoes_prisma: {
+
+  doc: `https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgres`,
+
+  prisma: `yarn add -D prisma`,
+
+}

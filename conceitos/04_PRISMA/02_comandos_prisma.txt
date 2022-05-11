@@ -1,6 +1,9 @@
 
 prisma_inicio: {
+  invocar_cli: `yarn prisma   // vai mostrar os comandos disponiveis`,
   
+  configurar_prisma: `yarn prisma init    // vai criar a pasta com configuracoes de uso do prisma com prisma.schema`,
+
 }
 
 
