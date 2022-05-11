@@ -14,13 +14,17 @@
   @Arg("email") email: string,
   @Arg("password") password: string
 
-  ### CRIO ESTA CLASSE ARGS - DEFINO ARGS OBRIAGTORIOS E OPCIONAIS
-  E CHAMO ELA COMO TIPO DA VARIAVEL QUE CONTERA TODOS OS ARGS
-  E DEPOIS DENTRO DA FUNCAO POSSO EXTRAIR CAMPO A CAMPO PARA COMBINACOES/MATCH
+  ### CRIO ESTA CLASSE ARGS - DEFINO ARGS OBRIGATORIOS E OPCIONAIS
+
+  uso: na funcao da mutacao importo e uso o @Args 
+  - E CHAMO ELA COMO TIPO DA VARIAVEL QUE CONTEM TODOS OS ARGS
+  - E DEPOIS DENTRO DA FUNCAO POSSO EXTRAIR CAMPO A CAMPO PARA COMBINACOES/MATCH
+ - OBS: POSSO EXTRAIR OS CAMPOS >> NOS ARGS OU DENTRO DA FUNCAO COM DESESTRUTURACAO DO ES6
 
   exemplo: 
-  createUser(createUsersArgs: CreateUsersArgs) {
-    const { nome, sobrenome, email, password } = createUsersArgs;
+  @Args() data : CreateUsersArgs) {
+    
+    const { nome, sobrenome, email, password } = data;
 
     // AGORA POSSO USAR SEPARADO CAMPO A CAMPO
  
