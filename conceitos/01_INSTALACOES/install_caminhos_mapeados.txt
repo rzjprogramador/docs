@@ -20,7 +20,7 @@ install_producao: {
   },
   caminhos_mapeados_para_execucoes_console_internas: {
     nome: 'tsconfig-paths',
-    instalar: `yarn add tsconfig-paths`,
+    instalar: `yarn add -D tsconfig-paths`,
     detalhes: `onde for usar adicionar: -r tsconfig-paths/register`,
   }
 }
