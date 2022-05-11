@@ -1,4 +1,6 @@
 
+> ARQUIVO SEED
+- arquivo seed.ts ficará na pasta root prisma , junto com o schema.prisma
 
 > ADICIONAR AO ARQUIVO DE INICIALIZACAO A VARIAVEL ENV
 const ENV = process.env.NODE_ENV
