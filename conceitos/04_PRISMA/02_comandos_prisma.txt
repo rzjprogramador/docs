@@ -14,8 +14,12 @@ comandos_use_prisma = {
 
   migracao_dev: `yarn prisma migrate dev --name <NOME MIGRACAO>  // FAZER APOS CADA MODELAGEM`
 
-  resetar_banco: `yarn prisma migrate reset`,
-  rodar_seed: `yarn prisma db seed`,
+  resetar_banco_producao: `yarn prisma migrate reset  // VAI RESETAR E RODAR O SEED :: RESETANDO E POPULANDO -- NO INICIO DE DADOS AINDA EM DEV - MELHOR USAR ESTE`,
+
+  rodar_seed_no_banco_producao: `yarn prisma db seed`,
+
+  rodar_seed_no_banco_test: `yarn pretest`,
+
   versionamento: `yarn prisma migrate dev`,
   interface_banco_prisma: `yarn prisma studio`,
   mostra_todos_comandos_de_migracao: `yarn prisma migrate`,
