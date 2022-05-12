@@ -7,9 +7,12 @@
 
 ---
 
+# ID IDENTIFICADOR UNICO
+> Melhor gerar o id pela propria app ...mas como é obriagtorio no prisma gera pelo menos um id_db
 
 > no prisma schema : 
 id    String  @id  @default(uuid())
+
 
 > ID OPCIONAL EM:
 >> DTO / 

@@ -1,5 +1,6 @@
 
 terminar_processos_pid_abertos_no_node: {
+  palavras_chave: `#matar_processo_node`,
   pode_dar_erro_em_start_server: {
     erro: 'Error: listen EADDRINUSE: address already in use :::7777',
     traducao: 'Erro: escuta EADDRINUSE: endereço já em uso :::7777'
@@ -9,4 +10,11 @@ terminar_processos_pid_abertos_no_node: {
 
     }
   }
+}
+erro_subir_server: {
+cenario: 'Ao tentar rodar server',
+erro: 'Error: ENOSPC: System limit for number of file watchers reached',
+traducao: 'ENOSPC: limite do sistema para o número de observadores de arquivos atingido',
+solucao: `tutorial:: https://www.vivaolinux.com.br/dica/Error-ENOSPC-System-limit-for-number-of-file-watchers-reached-Resolvido`,
+
 }
