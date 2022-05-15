@@ -1,3 +1,6 @@
+instalacoes_jest: {
+  jest: 'yarn add -D jest',
+}
 
 resumo: {
   banco_de_producao: {
