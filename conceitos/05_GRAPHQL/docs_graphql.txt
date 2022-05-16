@@ -1,0 +1,6 @@
+docs_graphql: {
+  
+  configurar_playground: `configurar como quer usar o apollo playground :
+https://www.apollographql.com/docs/apollo-server/migration/#graphql-playground`,
+
+}
