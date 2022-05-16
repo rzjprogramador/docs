@@ -92,7 +92,6 @@
   "editor.fontFamily": "'Operator Mono Lig Book', 'SF Mono', Consolas, 'Source Code Pro', 'Dank Mono', 'Fira Code', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New', Courier, Monaco, monospace",
   "editor.glyphMargin": false,
   "editor.fontLigatures": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
@@ -259,17 +258,10 @@
   "colorize.enable_search_variables": false,
 
   // CSpell checker extension
-  "cSpell.enabled": true,
+  "cSpell.enabled": false,
   "cSpell.language": "en,pt,pt_BR",
   "cSpell.enableFiletypes": ["shellscript"],
-  "cSpell.customUserDictionaries": [
-    {
-      "name": "Custom",
-      "description": "Custom CSpell Dict",
-      "path": "~/Development/custom-cspell-dictionary.txt",
-      "addWords": false
-    }
-  ],
+  
 
   // XML Language Support by Red Hat
   "redhat.telemetry.enabled": true,

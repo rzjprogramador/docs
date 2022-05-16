@@ -1,5 +1,7 @@
 instalacoes_jest: {
   jest: 'yarn add -D jest',
+  tipos_jest: `yarn add -D @types/jest`,
+  reload_jest: `yarn add -D ts-jest`,
 }
 
 resumo: {

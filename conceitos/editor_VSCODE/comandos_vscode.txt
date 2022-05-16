@@ -11,5 +11,9 @@ evitar_mal_funcionamento: {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
    `,
 
+   verificador_de_ortografia: {
+     cSpell: 'cSpell pode ser desativado globalmente no settings do json como false',
+   }
+
 
 }
