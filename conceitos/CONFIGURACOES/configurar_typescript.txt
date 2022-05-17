@@ -1,0 +1,7 @@
+config_ts_config: {
+
+  parar_pedir_inicializacao_variaveis: `"strictPropertyInitialization": false`,
+
+
+  
+}
