@@ -1,3 +1,21 @@
+
+CONCLUSOES :
+@InputType >> Para gerar um objeto empacotado nos argumentos exemplo: ( (data: dataInput ) vai gerar no SDL um GraphQLInputType
+
+usar no Resolver :: ex:
+@Arg("data") data: CreateUsersArgs,
+...
+@ArgsType >> é virtual e será achatado no esquema: vai desempacotar as props exemplo:
+
+( id: Int!, userId: Int!)
+
+vai gera no SDL : exemplo:
+updateItem(id: Int!, userId: Int!): Item!
+
+
+
+====
+
 # ARGS : RECEBIMENTO DE ARGUMENTOS VIA PARAMETROS:
 
  EM CLASSE ARGS POSSO DEFINIR OS CAMPOS DO ARGS OBRIGATORIOS E OPCIONAIS 
