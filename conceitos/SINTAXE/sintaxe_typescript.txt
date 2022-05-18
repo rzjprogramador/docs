@@ -33,3 +33,14 @@ funcao_que_retorna_objeto: {
   })
   `,
 }
+
+funcao_anonima: {
+
+  sintaxe: `
+  export default(param: TipoParam): tipoRetornoFuncao => { ... }
+  `,
+
+  exemplo: `
+  export default(router: Router): void => { ... }
+`,
+}
