@@ -1,10 +1,27 @@
 sintaxe_typescript: {
 
-  contexto: {
+  funcoes_metodos: {
 
-    em_classe: `metodo( params) {} `,
+    em_classe: {
+      sintaxe: `
+        metodo( params) {} 
+      `,
 
-    em_funcional: `metodo( params): => TipoRetorno {} `,
+      exemplo: `
+        exemplo:: const makeCreateUsersController = (): Controller => {}
+      `,
+    },
+
+    em_funcional: {
+      sintaxe: `
+        const metodo = ( params?: Tipo? ): TipoRetornofuncao =>  { }
+      `,
+
+      exemplo: `
+        exemplo:: const makeCreateUsersController = (): Controller => {}
+      `,
+    }
+  
 
   },
 
