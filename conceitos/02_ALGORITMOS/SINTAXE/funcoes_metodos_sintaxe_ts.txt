@@ -62,10 +62,17 @@ funcao_que_retorna_objeto: {
 funcao_anonima: {
 
   sintaxe: `
-  export default(param: TipoParam): tipoRetornoFuncao => { ... }
+  // COM PARAM :: ALIMENTAR AS VARIAVEIS DENTRO DO CORPO
+   export default(param: TipoParam): tipoRetornoFuncao => { ... }
+
+  // SEM PARAM : SÓ EXECUTAR O CORPO
+    export default () => { }
+
   `,
 
   exemplo: `
   export default(router: Router): void => { ... }
+  //
+  export default () => { }
 `,
 }

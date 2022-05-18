@@ -1,0 +1,1 @@
+- na api rest : nao esta encontrando so path alias caminhos mapeados.
