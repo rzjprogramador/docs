@@ -1,6 +1,10 @@
-resposta_funcao_http_com_statusCode_e_o_dado: {
+resposta_http_para_funcao_de_controle: {
 
-  contexto: `com o json HttpResponse podemos dar uma resposta com satus e o dado mudando o statusCode para 200 no sucesso ou 500 na falha`,
+  contexto: `
+  Somente a funcao Controladora que vai dar a respota direto apra o Client dar esta resposta em corpo json que é po formato aceito.
+  Ao inves da funcao reotrnar simplesmente o dado ela retorna um corpo Json:
+
+  com o json HttpResponse podemos dar uma resposta com satus e o dado mudando o statusCode para 200 no sucesso ou 500 na falha`,
 
   processamento: {
     tipo_retorno: `HttpResponse > que é um corpo json com statusCode e o dado_pronto dentro da prop data, 
