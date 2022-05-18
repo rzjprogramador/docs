@@ -1,5 +1,13 @@
 sintaxe_typescript: {
 
+  contexto: {
+
+    em_classe: `metodo( params) {} `,
+
+    em_funcional: `metodo( params): => TipoRetorno {} `,
+
+  },
+
   metodo_interface: {
 
     sintaxe: `metodo: (param: Tipo) => Promise<TipoRetorno> `,
