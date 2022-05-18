@@ -16,3 +16,20 @@ sintaxe_typescript: {
 
   }
 }
+
+funcao_que_retorna_objeto: {
+
+  sintaxe: `
+  export const NOME = (PARAM: TIPO): TIPO_RETORNO => ({
+    PROP: VALOR,
+    PROP2: VALOR
+  })
+  `,
+
+  exemplo: `
+  export const sucess = (data: any): HttpResponse => ({
+    statusCode: 200,
+    data
+  })
+  `,
+}
