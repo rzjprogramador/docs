@@ -6,6 +6,12 @@ config_ts_config: {
 
   permitir_importacoes_de_arquivos_json: `"resolveJsonModule": true, >> permite importacoes entre arquivos json`,
 
+  permitir_js: `"allowJs": true,`,
+
+  pular_checagem_de_lib: `"skipLibCheck": false`,
+
+  
+
 
   
 }
