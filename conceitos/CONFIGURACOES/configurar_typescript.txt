@@ -2,6 +2,10 @@ config_ts_config: {
 
   parar_pedir_inicializacao_variaveis: `"strictPropertyInitialization": false`,
 
+  typeRoots: 'typeRoots onde o ts procura as tipagens , apontar para node_modules/@types',
+
+  permitir_importacoes_de_arquivos_json: `"resolveJsonModule": true, >> permite importacoes entre arquivos json`,
+
 
   
 }

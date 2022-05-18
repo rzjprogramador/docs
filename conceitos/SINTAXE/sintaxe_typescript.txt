@@ -1,0 +1,18 @@
+sintaxe_typescript: {
+
+  metodo_interface: {
+
+    sintaxe: `metodo: (param: Tipo) => Promise<TipoRetorno> `,
+
+    exemplo: `createUsers: (data: Users) => Promise<Users> `,
+    
+  },
+
+  metodo_classe: {
+
+    sintaxe: `async metodo(): Promise<TipoRetorno<OpcaoRetorno>> `,
+
+    exemplo: `handle(): Promise<HttpResponse<CreateUsersViewModel>> `,
+
+  }
+}
