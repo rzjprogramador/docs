@@ -1,0 +1,11 @@
+possibilidades_gerar_id: {
+
+  aleatorio_matematico_em_string: `Math.random.toString()`,
+  
+  makeUuid: `
+  export const makeId = () => {
+  return uuidv4()
+}
+  `,
+}
+
