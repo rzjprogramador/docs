@@ -4,4 +4,6 @@ instalacoes_prisma: {
 
   prisma: `yarn add -D prisma`,
 
+  cli: `yarn add @prisma/client`,
+
 }
