@@ -1,0 +1,8 @@
+todo metodo que passar o mouse encima e avisar que é uma Promise
+use await antes da sua expressao para esperar pra ser executada.
+
+usagem: 
+no controle quando esta usando a funcao execute do obj do servico este metodo se apssar o mouse encima vai ver que é uma Promesa entao coloque await encima ..senao ao consultar um array ela retorna um objeto vazio. 
+
+exemplo: await listUsersService.execute()
+      return res.status(200).json(all)
