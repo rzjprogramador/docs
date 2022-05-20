@@ -1,3 +1,51 @@
+Criacao Dado Objeto:  {
+tutorial_crud: ['aos 59:28 >> nest prima >> https://youtu.be/8IwUvk6hZaI'],
+
+ conceito: `Dois objetos com as mesmas chaves fazem um match combinam e o ULTIMO ou unico configurado com valor sobrescreve o outro originando um novo objeto pronto preenchido`,
+ 
+processando: `
+sendo assim na funcao que esta recebendo um dado objeto eu ja tenho este preenchido que recebi por param,
+pra fazer um match insiro apresento o meu MODELO DE ESQUELETO LITERAL COM ALGUNS CAMPOS CONFIGURADOS SE PRECISAR  E OUTROS VAZIOS mas aue tenham as mesmas chaves do recebido e por estar no mesmo escopo do recebido sera mergiado  e sobreescrito...e sugará os valores do recebido por ser apresentado por ultimo.
+e retorno este meu objeto  que assim tenho um novo dado objeto pronto.
+`,
+
+forma_copiando_replicando: `
+const novoObj = { ...data, id: ()}
+return novoObj
+
+// copiando o obj que recebi e replicar reconfigurando o campo apos a virgula no caso o id.
+`,
+
+forma_shortCurt_sem_mudar: `
+Se nao precisa mudar nada faz da forma curta ::
+recebe o data , devolve com mesmo nome em shortCurt oubrenomeia data: outoNome
+
+e repassa dentro de json chaves se for retorno de metodo de terceiro ...ex:
+ return { data }
+
+obs: se receber do req, res do express tem que extrair , capturar e repassar o capturado da extracao.
+`
+
+exemplo: `
+// SIMULANDO DADO QUE VEM DE FORA : REQUISICAO
+const user = { nome: 'Rei', idade: 44 }
+console.log(user) 
+// NAO`,
+
+forma_instanciando_no_escopo : `
+- na funcao que recebo todo o dado empacotado com seus campos.
+- intancio a classe que da origem  a sua estrutura passando o dado que recebi ....
+- e já capturo este resultado .
+- obs: precida da funcao de objetos Obeject.assign para atribuir os valores entre os objetos ...porque assim nao faz o merge sozinho deste que sera meu dado novo desta mesma origem/classe.
+- 
+obs: Só confere se a cada execusao vsi ficar instanciando o mesmo objeto zerando ele.
+`,
+....
+
+
+========
+
+
 criacao_obj_entidade = {
   hard_code: {
     cenario: 'dentro de uma funcao',
@@ -15,3 +63,4 @@ criacao_obj_entidade = {
     },
   },
 }
+
