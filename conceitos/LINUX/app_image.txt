@@ -1,0 +1,3 @@
+app_image: {
+  doc: `https://www.appimagehub.com/browse`,
+}
