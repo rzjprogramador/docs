@@ -1,0 +1,5 @@
+comandos_linux_debian: {
+  deletar: {
+    tudo_que_tiver_dentro: `rm -rf <Diretorio>`
+  }
+}
