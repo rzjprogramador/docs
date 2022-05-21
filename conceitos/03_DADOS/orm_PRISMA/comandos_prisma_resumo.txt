@@ -1,3 +1,4 @@
 comandos_prisma: {
-  migracao: `yarn prisma migrate dev --name init <NOME_DA_MIGRACAO>`,
+  migracao: `yarn prisma migrate dev --name init <NOME_DA_MIGRACAO> 
+   // OBS: RODA O SEED SÓ PARA AVALIAR ESTRUTURA MAS NAO INSERE OS DADOS DO SEED`,
 }
