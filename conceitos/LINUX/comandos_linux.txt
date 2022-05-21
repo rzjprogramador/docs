@@ -1,3 +1,7 @@
+super_admin_sudo: {
+  conceito: `Se nao tiver permissao apra fazer algo use o sudo na frente do comando, vai conseguir fazer como super admin a maior hierarquia. ex: remover diretorio com : sudo rm -rf <Diretorio> `,
+}
+
 comandos_linux_debian: {
   deletar: {
     tudo_que_tiver_dentro: `rm -rf <Diretorio>`
