@@ -12,7 +12,7 @@ async function main() {
   // makeSeedHellos()
 
   const helloUm = await prisma.hello.upsert({
-    where: { unico: 'unico_1' }, // define condicao para aplicar os dados
+    where: { unico: 'unico_1' }, // TENHO QUE DEFINIR A CONDICAO APRA APLICA ROS DADOS
     update: {},
     create: {
       um: 'um_1',

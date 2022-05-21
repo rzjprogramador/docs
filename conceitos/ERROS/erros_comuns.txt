@@ -1,0 +1,22 @@
+erros_node: {
+  descricao_erro: `
+Error: (variavel Error e o motivo do erro)'(Caminho do arquivo do erro)'
+
+aviso Solucao exemplo: Require stack "Requer exportacoes" /CAMINHO ONDE ESTA O ARQUIVO QUE ESTA COM A IMPORTACAO ERRADA
+
+`,
+
+exemplo: `
+Error: Cannot find module '@src/database/client_prisma'
+Require stack:
+`,
+
+}
+
+---
+
+nomes_erros: {
+
+erros_de_exportacoes: `Require stack`
+
+}
