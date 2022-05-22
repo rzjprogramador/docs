@@ -12,5 +12,14 @@ iniciar_projeto: {
     conceito: `vai instalar o typescript e sua tipagem`,
   },
 
+  apelido_caminhos: {
+    nome: `path-mapping`,
+    comando: `
+    yarn add module-alias tsconfig-paths
+
+`,
+    conceito: ``,
+  },
+
 
 }
