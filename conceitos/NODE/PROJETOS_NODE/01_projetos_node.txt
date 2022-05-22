@@ -1,0 +1,8 @@
+iniciar_projeto: {
+  instalar: {
+    comando: ` yarn init -y`,
+    conceito: `vai criar o gerenciador de dependencias package.json`,
+  },
+
+  
+}

@@ -4,6 +4,8 @@ instalacoes_caminhos_mapeados: {
   module_alias: `yarn add module-alias`,
 }
 
+apelido_principal_que_quero_usar: `@src/`,
+
 no_ts_config: `
 
   "baseUrl": "src",
