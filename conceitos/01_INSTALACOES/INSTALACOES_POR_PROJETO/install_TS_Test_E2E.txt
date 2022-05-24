@@ -1,0 +1,15 @@
+install_test_E2E_prisma: {
+
+  projeto: {
+  yarn init -y
+  },
+
+  dependencias: {
+    @prisma/client dotenv express
+  },
+
+  devDependencies: {
+    @swc/core @swc/jest @types/express @types/jest types/node @types/pg @types/supertest jest pg prisma supertest ts-node typescript 
+  },
+
+}

@@ -1,0 +1,45 @@
+instalar_caminhos_mapeados: [
+  { 
+    nome: `module-alias`, 
+    instalar_como: `dependencies`, 
+    instalacao: `yarn add module-alias`, 
+    detalhes: `adicionar ao primeiro arquivo que sobe a app a importacao: 
+  import 'module-alias/register'
+  e no gerenciador de pacotes o destino do build:
+  "_moduleAliases": {
+    "@": "dist"
+  }
+
+  `, 
+  
+  objetivo: `Vai resolver os caminhos mapeados na compilacao do Ts e no Js`
+   },
+
+  { 
+    nome: `tsconfig-paths`, 
+  instalar_como: `devDependencies`, 
+  instalacao: `yarn add -D tsconfig-paths`, 
+  detalhes: `adicionar logo depois do tsnd para o tsnd antes de executar o spript usar esta port -r do pacote...exemplo: tsnd -r tsconfig-paths/register --restante script`,
+   objetivo: `Para o ts-node-dev entender os caminhos mapeados` },
+
+  { 
+    nome: ``, 
+  instalar_como: ``, 
+  instalacao: ``, 
+  detalhes: ``, 
+  objetivo: ``
+   },
+
+]
+
+caminhos_mapeados_ts: {
+  definir_a_url_base: {
+    definir_como: `src`,
+    conceito: `as @variaveis definidas abaixo vai comecar com o uqe foi definido aqui na base url`,
+    exemplo: `se eu definir uma @variavel com o valor infra/* na verdade ela sera interpretada como src/infra/*`,
+  }
+
+  denifir_as_variaveis_de_url_no_obj_path: {
+    variavel: `'Sempre que encontrar esta '@variavel/* 'com tudo que tiver vier depois': `,
+  }
+}

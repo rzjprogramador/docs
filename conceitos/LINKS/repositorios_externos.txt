@@ -1,4 +1,9 @@
-br_dev: {
-  nome: 'BR DEV',
+link_repo: {
+  projeto: `Br Dev`,
   link: `https://github.com/codigofalado/brdev`,
+}
+
+link_repo: {
+  projeto: `Br Dev`,
+  link: `https://github.com/rocketseat-content/node-tests-e2e`,
 }
