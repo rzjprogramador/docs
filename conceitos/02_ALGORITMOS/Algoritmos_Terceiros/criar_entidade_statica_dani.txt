@@ -1,22 +1,19 @@
-// EXEMPLO ENTIDADE STATICA DANI
+// EXEMPLO ENTIDADE STATICA 
 
-export class User {
-  id?: string;
-  name: string;
-  username: string;
-  email: string;
+export class ProdEncomenda {
+  idDB?: string
+  nome: string
+  preco: number
 
-  private constructor({ name, username, email }: User) {
+  private constructor({ nome, preco }: ProdEncomenda) {
     return Object.assign(this, {
-      name,
-      username,
-      email,
+      nome, 
+      preco
     });
   }
 
-  static create({ name, username, email }: User) {
-    const user = new User({ username, name, email });
+  static create({ nome, preco }: ProdEncomenda) {
+    const user = new ProdEncomenda({ nome, preco });
     return user;
   }
 }
-
