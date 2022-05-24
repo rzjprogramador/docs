@@ -6,3 +6,9 @@ no controle quando esta usando a funcao execute do obj do servico este metodo se
 
 exemplo: await listUsersService.execute()
       return res.status(200).json(all)
+
+erro: {
+      titulo: `is not under 'rootDir' // não está em 'rootDir'`,
+      conceito: `Erro ao tentar importar arquivo que esta na raiz do projeto`,
+      solucao: `Tem que colocar a pasta no rootDir do tsconfig ou excluir a rootDir dele.`,
+}
