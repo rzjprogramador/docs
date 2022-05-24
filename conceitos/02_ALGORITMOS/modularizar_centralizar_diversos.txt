@@ -1,8 +1,0 @@
-
-// CENTRALIZADOR DE ROTAS
-// PARA TRAZER TODAS AS ROTAS DE ROUTES USE A FUNCAO USE E FAÇA IGUAL ESTA EMBAIXO
-routes.use('/api', createUsersRouter) // PRIMEIRO PREFIXO E O OBJETO DA ROTA
-
-tutorial: https://acervolima.com/como-criar-varias-rotas-no-mesmo-servidor-express-js/
-
-----
