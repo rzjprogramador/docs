@@ -12,3 +12,8 @@ link_repo: {
   projeto: `Rest e GraphQL juntos - rocket`,
   link: `https://github.com/rocketseat-content/youtube_graphql_express`,
 }
+
+link_repo: {
+  projeto: `test Prisma Super test - rocket- dani`,
+  link: `https://github.com/rocketseat-content/youtube-node-testes`,
+}
