@@ -1,3 +1,12 @@
-doc_nest: {
-  configuracoes_na_app_nest: `https://docs.nestjs.com/techniques/configuration`,
+
+link_doc: {
+  projeto: ``,
+  link: ``,
 }
+
+link_doc: {
+  projeto: `jest`,
+  link: `https://jestjs.io/docs/cli#testtimeout-number`,
+}
+
+
