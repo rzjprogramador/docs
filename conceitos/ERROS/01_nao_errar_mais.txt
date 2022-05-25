@@ -11,4 +11,10 @@ erro: {
       titulo: `is not under 'rootDir' // não está em 'rootDir'`,
       conceito: `Erro ao tentar importar arquivo que esta na raiz do projeto`,
       solucao: `Tem que colocar a pasta no rootDir do tsconfig ou excluir a rootDir dele.`,
+},
+
+erro: {
+      titulo: `Cannot find module or its corresponding type declarations.ts(2307)'`,
+      conceito: `Não é possível encontrar o módulo ou suas declarações de tipo correspondentes`,
+      solucao: `Esta faltando instalar a titagem os @types/pacote do pacote em questao`,
 }

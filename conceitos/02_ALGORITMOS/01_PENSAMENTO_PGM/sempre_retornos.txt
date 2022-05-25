@@ -29,3 +29,9 @@ padroes_de_retorno: {
 - variavel_a_esquerda: 'cria uma referencia do resultado da expressao a direita',
 
 }
+
+possiveis_erros_solucoes_retorno: [
+  'se  funcao esta retornando void vazio e vc precisa dela pra ver o resultado final coloque return na ultima instrucao para ela ter retorno.',
+  '',
+  '',
+]
