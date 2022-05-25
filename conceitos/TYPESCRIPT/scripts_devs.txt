@@ -1,0 +1,11 @@
+{
+  objetivo: ``,
+  acesso: ``,
+  script: ``,
+},
+
+{
+  objetivo: ``,
+  acesso: `dev`,
+  script: `"dev": "ts-node-dev --respawn --watch 'src/**' --transpile-only --ignore-watch node_modules -r tsconfig-paths/register src/_app/server.ts",`,
+},

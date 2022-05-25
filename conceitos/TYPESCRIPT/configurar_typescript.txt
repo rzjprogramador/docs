@@ -12,6 +12,8 @@ config_ts_config: {
 
   pular_checagem_de_lib: `"skipLibCheck": false`,
 
+  forcar_primeira_letra_maiuscula_arquivos: `"forceConsistentCasingInFileNames": true,`,
+
   
 
 

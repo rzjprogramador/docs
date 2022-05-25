@@ -1,0 +1,9 @@
+{
+objetivo: 'fluxo_configuracao',
+
+}
+
+{
+objetivo: 'fluxo_criacao_entidade',
+
+}
