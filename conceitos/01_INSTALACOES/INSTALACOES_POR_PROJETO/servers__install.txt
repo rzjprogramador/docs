@@ -1,0 +1,19 @@
+
+
+{
+  nome: `apollo-server`,
+  doc: `https://www.apollographql.com/docs/apollo-server/`,
+  tipo_instalacao: `dependencies`,
+  instalacao: `yarn add apollo-server`,
+  objetivo: ``,
+  detalhes: {
+
+     configurar_playground: `configurar como quer usar o apollo playground :
+https://www.apollographql.com/docs/apollo-server/migration/#graphql-playground`,
+
+  },
+},
+
+
+
+
