@@ -7,7 +7,7 @@
     acoes: `
       - 1 - criar a entidade no banco com o prisma::
       - com os mesmos campos da entidade definida em seu modulo entity para fazer um match de entidades : EntidadeBanco === EntidadeModulo
-      --> fazer uma migracao para criar e habilitar a entidade e versionar esta criacao no banco 
+      --> fazer uma migracao (yarn prisma migrate dev) para criar e habilitar a entidade e versionar esta criacao no banco 
     `,
   },
 
