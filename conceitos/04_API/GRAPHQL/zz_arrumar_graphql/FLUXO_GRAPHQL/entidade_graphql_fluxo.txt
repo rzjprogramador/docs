@@ -19,7 +19,7 @@
 
     caso_de_uso_criacao: {
       contrato: `
-        3- criar o repositorio de criacao :: com o contrato para criacao desta entidade.
+        3- criar o repositorio_usecase para criacao :: com o contrato para criacao desta entidade.
 
         4 - com o contrato das acoes que esta entidade criada pode fazer exemplo: CRUD :: create(), list(), update(), findOne(), delete()
         `
@@ -46,6 +46,13 @@
 
     repositorio_banco: `
       6 - criar o Repositorio que vai se comunicar com o banco e gravar a s acoes feiats no servico::
+
+      - este repositorio vai obedecer o contrato de respositorios da entidade
+
+      vou precisar do clientBanco que é o prisma client 
+      
+      no metodo assincronamente : espero e chamo este clientBanco. tabelaObjeto . metodoObjetivo( { passar o dado })
+
       
       `
   }
