@@ -5,11 +5,10 @@
   "update.mode": "none",
   "zenMode.silentNotifications": true,
   "editor.wordWrap": "on",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.matchBrackets": "never",
   "workbench.panel.defaultLocation": "bottom",
   "git.autofetch": true,
-  "emmet.triggerExpansionOnTab": false,
+  
 
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma",
@@ -46,6 +45,51 @@
       "icon": "$(close)"
     }
   },
+
+  // INTELISENSE RZJ
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.tabCompletion": "on",
+  "editor.wordBasedSuggestions": false,
+  "editor.snippetSuggestions": "none",
+    // Emmet
+    "emmet.syntaxProfiles": {
+      "javascript": "jsx"
+    },
+    "emmet.includeLanguages": {
+      "django-html": "html",
+      "javascript": "javascriptreact",
+      "typescript": "typescriptreact"
+    },
+  "emmet.triggerExpansionOnTab": false,
+  "emmet.showExpandedAbbreviation": "never",
+
+  // ---
+
+   // Editor and breadcrumbs // INTELISENSE
+   "breadcrumbs.enabled": false,
+   "editor.renderControlCharacters": false,
+   "editor.tabSize": 2,
+   "editor.renderLineHighlight": "gutter",
+   "editor.rulers": [79, 120],
+   "editor.minimap.enabled": false,
+   "editor.fontSize": 16,
+   "editor.detectIndentation": true,
+   "editor.formatOnPaste": false,
+   "editor.cursorSmoothCaretAnimation": true,
+   "editor.mouseWheelScrollSensitivity": 2,
+   "editor.smoothScrolling": true,
+   "editor.mouseWheelZoom": true,
+   "editor.linkedEditing": true,
+   "editor.fontFamily": "'Operator Mono Lig Book', 'SF Mono', Consolas, 'Source Code Pro', 'Dank Mono', 'Fira Code', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New', Courier, Monaco, monospace",
+   "editor.glyphMargin": false,
+   "editor.fontLigatures": true,
+   "editor.formatOnSave": true,
+   "editor.codeActionsOnSave": {
+     "source.fixAll.eslint": true,
+     "source.fixAll": true
+   },
+
   "workbench.statusBar.visible": false,
   "javascript.format.insertSpaceAfterConstructor": true,
   "typescript.format.insertSpaceAfterConstructor": true,
@@ -69,35 +113,6 @@
   // Explorer
   "explorer.compactFolders": false,
   "explorer.confirmDelete": true,
-
-  // Editor and breadcrumbs
-  "breadcrumbs.enabled": false,
-  "editor.renderControlCharacters": false,
-  "editor.tabSize": 2,
-  "editor.renderLineHighlight": "gutter",
-  "editor.rulers": [79, 120],
-  "editor.minimap.enabled": false,
-  "editor.fontSize": 16,
-  "editor.detectIndentation": true,
-  "editor.snippetSuggestions": "top",
-  "editor.wordBasedSuggestions": false,
-  "editor.suggest.localityBonus": true,
-  "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.formatOnPaste": false,
-  "editor.cursorSmoothCaretAnimation": true,
-  "editor.mouseWheelScrollSensitivity": 2,
-  "editor.smoothScrolling": true,
-  "editor.mouseWheelZoom": true,
-  "editor.linkedEditing": true,
-  "editor.fontFamily": "'Operator Mono Lig Book', 'SF Mono', Consolas, 'Source Code Pro', 'Dank Mono', 'Fira Code', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New', Courier, Monaco, monospace",
-  "editor.glyphMargin": false,
-  "editor.fontLigatures": true,
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll": true
-  },
-  "editor.suggestSelection": "first",
 
   // Git
   "git.enableSmartCommit": true,
@@ -144,7 +159,6 @@
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,
   "[javascript]": {
-    "editor.suggestSelection": "recentlyUsed",
     "editor.suggest.showKeywords": false
   },
 
@@ -180,15 +194,7 @@
     "**/requirements{/**,*}.{txt,in}": "pip-requirements"
   },
 
-  // Emmet
-  "emmet.syntaxProfiles": {
-    "javascript": "jsx"
-  },
-  "emmet.includeLanguages": {
-    "django-html": "html",
-    "javascript": "javascriptreact",
-    "typescript": "typescriptreact"
-  },
+
 
   // ##################### Extensions ##################### //
 
@@ -261,7 +267,6 @@
   "cSpell.enabled": false,
   "cSpell.language": "en,pt,pt_BR",
   "cSpell.enableFiletypes": ["shellscript"],
-  
 
   // XML Language Support by Red Hat
   "redhat.telemetry.enabled": true,
@@ -282,5 +287,8 @@
     ]
   },
   "bracket-pair-colorizer-2.depreciation-notice": false,
-  "security.workspace.trust.untrustedFiles": "newWindow"
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
