@@ -2,10 +2,20 @@ possibilidades_gerar_id: {
 
   aleatorio_matematico_em_string: `Math.random.toString()`,
   
-  makeUuid: `
-  export const makeId = () => {
-  return uuidv4()
 }
-  `,
-}
+
+// gerar id makeId uuid
+
+ gerar_id_uuid: {
+   tipo_instalacao: 'dependencies',
+    instalar: `yarn add uuid`,
+
+  uso: `
+    import { v4 as uuidv4 } from 'uuid'
+
+    export const makeId = () => {
+      return uuidv4()
+    }
+    `,
+  }
 
