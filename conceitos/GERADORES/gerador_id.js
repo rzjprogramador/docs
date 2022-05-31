@@ -8,6 +8,7 @@ possibilidades_gerar_id: {
 
 {
   nome: 'gerar_id_uuid',
+  doc: `https://www.npmjs.com/package/uuid`,
   tipo_instalacao: 'dependencies',
   instalar: `yarn add uuid`,
 
@@ -17,6 +18,20 @@ uso: `
   export const makeId = () => {
     return uuidv4()
   }
+  //
+  `,
+  }
+
+{
+  nome: 'gerar id com crypto do node',
+  doc: ``,
+  tipo_instalacao: 'default do node',
+  instalar: `default do node`,
+
+uso: `
+import crypto from 'crypto'
+crypto.randomUUID()
+//
   `,
   }
 
