@@ -15,9 +15,8 @@ possibilidades_gerar_id: {
 uso: `
   import { v4 as uuidv4 } from 'uuid'
 
-  export const makeId = () => {
-    return uuidv4()
-  }
+  export const makeID = () => uuidv4()
+  
   //
   `,
   }
