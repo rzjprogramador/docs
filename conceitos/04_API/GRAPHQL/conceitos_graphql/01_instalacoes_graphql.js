@@ -41,8 +41,8 @@ const install_graphQl = {
   contexto: `Mergiar resolvers`
   ferramenta: ` `
   instalacoes: `yarn add -D @graphql-tools/merge @graphql-tools/load-files`,
-  doc: ``,
-  tutorial: `https://www.youtube.com/watch?v=6Jd5nKQrqcU`,
+  doc: ['https://www.graphql-tools.com/docs/schema-merging',  ],
+  tutorial: ['https://www.graphql-tools.com/docs/schema-merging', 'https://www.youtube.com/watch?v=6Jd5nKQrqcU', ]
   exemplo: `
   
   `
