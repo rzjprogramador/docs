@@ -2,7 +2,7 @@
   tecnologia: `Typescript`,
   contexto: `caminhos mapeados, path mapping`,
   instalar_dependencies: `module-alias `,
-  instalar_DevDependencies: `tsconfig-paths `,
+  instalar_DevDependencies: `tsconfig-paths @types/module-alias `,
   adicionar_package_json: `
   "_moduleAliases": {
     "@": "dist"
@@ -75,4 +75,50 @@ caminhos_mapeados_ts: {
   denifir_as_variaveis_de_url_no_obj_path: {
     variavel: `'Sempre que encontrar esta '@variavel/* 'com tudo que tiver vier depois': `,
   }
+
+  todo_resolver_nao_entende_ainda_caminhos_mapeados: [
+    'resolver em graphql',
+    'resolver em prisma',
+    'resolver em prisma/seed',
+  ]
 }
+
+/*
+
+==================
+USAR SOLUCAO CAMINHSO MAPEADOS :
+https://stackoverflow.com/questions/50679031/tsconfig-paths-not-working
+
+
+Crie um arquivo referenciando todos os aliases
+
+// src/paths.ts
+
+import 'module-alias/register';
+import { addAliases } from 'module-alias';
+
+addAliases({
+  '@common': `${__dirname}/common`,
+  '@services': `${__dirname}/services`,
+});
+E importe-o em seu script de entrada como primeira importação
+
+// src/server.ts
+
+import './paths';
+import express, { Request, Response, NextFunction } from 'express';
+...
+
+const app = express();
+...
+app.listen(port, onListen(port));
+
+
+================
+
+EXEMPLOS CODIGOS - SANDOBOX - USANDO CAMINHSO MAPEADOS >
+https://codesandbox.io/examples/package/tsconfig-paths
+
+* O tsconfig-pathsprocura tsconfig.jsonem process.cwd, e neste caso é seu diretório raiz, e não packages/backend/.
+Em vez de especificar --project, tente especificá-lo usando variáveis ​​de ambiente: TS_NODE_PROJECT=packages/backend/tsconfig.json(consulte https://www.npmjs.com/package/tsconfig-paths#with-ts-node ).
+*/
