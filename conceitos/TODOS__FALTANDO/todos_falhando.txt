@@ -1,3 +1,0 @@
-- na api rest : nao esta encontrando so path alias caminhos mapeados.
-
-- prisma seed arquivos noa esta encontrando caminhos mapeados path aliases

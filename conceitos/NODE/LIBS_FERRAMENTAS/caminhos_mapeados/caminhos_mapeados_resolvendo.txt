@@ -1,1 +1,0 @@
-tutorial_resolver_caminhos_mapeados: (https://dev.to/rubiin/resolving-path-alias-in-nestjs-projects-11o1)

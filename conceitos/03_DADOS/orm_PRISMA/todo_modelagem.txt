@@ -8,8 +8,5 @@ todo_modelagem: {
     tem_que_ter_um_campo_unico: 'Clientes temq ue ter um campo unico pode ser "cpf"'
   }
 
-  caminhos_mapeados: {
-    ensinar_prisma: `ensinar o prisma a aceitar caminhos mapeados- noa esta funcionando nos seeds`,
-  }
 
 }

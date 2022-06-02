@@ -1,3 +1,36 @@
+{
+  tecnologia: `Typescript`,
+  contexto: `caminhos mapeados, path mapping`,
+  instalar_dependencies: `module-alias `,
+  instalar_DevDependencies: `tsconfig-paths `,
+  adicionar_package_json: `
+  "_moduleAliases": {
+    "@": "dist"
+  },
+  `,
+  adicionar_primeiro_arquivo_que_roda_app: `import 'module-alias/register'  `,
+  adicionar_em_scripts: `para usar a porta antes de ler o endereco do server :: -r tsconfig-paths/register`,
+  adicionar_tsconfig: `
+  "rootDir": ".",
+      "baseUrl": "./src",
+      "paths": {
+          "@/*": [
+              "*"
+          ]
+      },
+      `,
+  xxx: ``,
+  xxx: ``,
+}
+
+
+// ARRUMAR
+
+// FALTA_RESOLVERS_CAMINHOS_MAPEADOS
+// - na api rest : nao esta encontrando so path alias caminhos mapeados.
+
+// - prisma seed arquivos noa esta encontrando caminhos mapeados path aliases
+
 instalar_caminhos_mapeados: [
   { 
     nome: `module-alias`, 
