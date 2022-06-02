@@ -5,7 +5,11 @@ const editar_entidade_em_modo_hardcode = {
   - e devolver esta nova criacao
   `,
 
-  detalhes : ``,
+  detalhes : `
+  - precisamos do identificador e com o identificador pegamos a posicao
+  - Combinar campos do Recebimento e da Tabela no Banco...Para combinacao e merge.
+  
+  `,
 
   metodo_exemplo: `
 
