@@ -7,6 +7,8 @@ model Users {
   createdAt       DateTime  @default(now())
   ultimoLogin     DateTime?
 
+  tipoUser TipoUser
+
   cargo CargoUser @default(USER)
 
   pedidos Pedidos[]
@@ -92,6 +94,13 @@ enum CargoUser {
   MODERADOR
   FUNCIONARIO
   ENTREGADOR
+}
+
+enum TipoUser {
+ CLIENTE
+ PADRAO
+ LOJISTA
+ FUNCIONARIO
 }
 
 enum StatusEntrega {
