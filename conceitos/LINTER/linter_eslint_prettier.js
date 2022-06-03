@@ -97,6 +97,8 @@ definir o prettier como editor apdrao do vscode:
 "editor.defaultFormatter": "esbenp.prettier-vscode", // EDITOR PADRAO VSCODE
 `,
 
+para_funcionar: `Para funcionar feche e abra o vscode.`
+
 
 }
 
