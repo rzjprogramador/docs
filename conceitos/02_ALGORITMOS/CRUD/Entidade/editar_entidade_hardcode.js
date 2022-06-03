@@ -30,6 +30,22 @@ const editar_entidade_em_modo_hardcode = {
   
   `,
 
+  exemplo_playground: `
+  mutation UPDATE_USER {
+    updateUser(
+      id: "1"
+      data: {
+        nome: "nome_mudado111"
+        email: "email1@email.com"
+        password: "123123"
+      }
+    ) {
+      id
+      nome
+    }
+  }
+  `,
+
 
 
 } 
