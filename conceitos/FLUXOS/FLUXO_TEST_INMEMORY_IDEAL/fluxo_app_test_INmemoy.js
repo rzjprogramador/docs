@@ -65,19 +65,9 @@
     observacoes:
       "obs: antes de concretizar o objetivo posso fazer regras de negocio.",
   },
+
   {
     indeRef: 6,
-    local: "",
-    acao: "test",
-    alvo: "test do Servico",
-    tipo: "",
-    comunicacao: "",
-    processos: `
-    criar um objetoDaEntidade :: pra isto instancio o new ServicoDeCriacao`,
-    observacoes: "",
-  },
-  {
-    indeRef: 7,
     local: "na raiz do projeto em tests/modulo",
     acao: "test inmemory que implementa o contrato do objetivoRepository",
     alvo: "repositorio inmemory para injetar no servico",
@@ -88,6 +78,27 @@
     - dentro do metodo chamar este atributo array pushar pra dentro dele os dados recebidos
     - vai assim criar um objeto da entidade inmemory
 
+    `,
+    observacoes: "",
+  },
+
+  {
+    indeRef: 7,
+    local: "/na pasta do servico / objetivo caso de uso servico.spec",
+    acao: "test unitario inmemory",
+    alvo: "test do Servico",
+    tipo: "test unitario inmemory  do servico",
+    comunicacao: "com o a instancia injetada do repositorio InMemory",
+    processos: `
+    injecao de dependencia :
+    criar obj do repositorio inmemory :: instancio o repositorio inmemory
+    criar um objetoDaEntidade :: pra isto instancio o new ServicoDeCriacao
+    injeto o repositorio no servico e terei o objeto da entidadeRepositoryInMemory
+
+    - entidadeRepositoryInMemory será meu controlle e com ele poderei fazer os tests :   
+
+    - e inicio as assercoes dos tests : 
+    
     `,
     observacoes: "",
   },
