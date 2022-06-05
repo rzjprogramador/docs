@@ -76,4 +76,19 @@
     criar um objetoDaEntidade :: pra isto instancio o new ServicoDeCriacao`,
     observacoes: "",
   },
+  {
+    indeRef: 7,
+    local: "na raiz do projeto em tests/modulo",
+    acao: "test inmemory que implementa o contrato do objetivoRepository",
+    alvo: "repositorio inmemory para injetar no servico",
+    tipo: "classe repository inmemory",
+    comunicacao: "",
+    processos: `
+    - criar uma classe repositorio do objetivo inmemory com atributo que simula uma tabela do banco do tipo de array da entidade que começa vazio [],
+    - dentro do metodo chamar este atributo array pushar pra dentro dele os dados recebidos
+    - vai assim criar um objeto da entidade inmemory
+
+    `,
+    observacoes: "",
+  },
 ];

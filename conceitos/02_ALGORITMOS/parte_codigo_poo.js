@@ -49,4 +49,21 @@
   explicacao: `
   O CONSTRUTOR É PRIVADO - PARA CRIAR FORA A ENTIDADE USE A CLASSE.CREATE: USE EM TEST
   `,
+},
+
+{
+  area: 'POO',
+  contexto: `test`,
+  contextualizando: `alternativa sem sentido se nao passar`,
+  code: `
+  // passando a alternativa semSentido:
+
+  new CreateClienteFisico( { create: async (data) => {}, } )
+
+    `,
+  explicacao: `
+  na injecao de dependencia ao inves de passar um objeto de dependencia posso passar
+  um objeto com o metodo que ele espera do contratado o arg e retornar nada um objeto vazio.
+  é uma alternativa sem sentida somente só usaria apra passar rapido em tests e nao passar o repositorio externo ..mas tem uma solucao repositorio inMemory ao inves disso , mas só pra conhecer :
+  `,
 }
