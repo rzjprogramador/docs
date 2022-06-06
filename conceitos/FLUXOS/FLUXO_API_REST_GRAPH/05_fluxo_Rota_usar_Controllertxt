@@ -1,9 +1,0 @@
-# USAR CONTROLE NA ROTA
-
-exemplo:
-
-const listUsersController = new ListUsersController()
-// entrada: importar instanciando o controle
-
-usersRouter.get("/users", listUsersController.handle)
-// recurso http a ser usado , usar objeto e metodo do controle importado
