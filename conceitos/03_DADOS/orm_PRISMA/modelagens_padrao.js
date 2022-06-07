@@ -1,8 +1,19 @@
 {
   campos_padrao: `
+  // PADRAO SINTAXE TS
+  id ?  : string
+  idbd ? : string
+  indexRef? : number
+  createdAt :  Date
+  updated    : Date
+  ultimoLogin : Date
   
+ 
+
+  // PADRAO SINTAXE PRISMA
+
   id          String?
-  idDB        String    @id @default(uuid())
+  idbd        String    @id @default(uuid())
   indexRef    Int?      @default(autoincrement())
   createdAt   DateTime? @default(now())
   updated     DateTime? @updatedAt()

@@ -1,6 +1,6 @@
 /* MODELO
 {
-  tecnologia: '',
+  tecnologia: 'graphql',
   local_erro: ``,
   local_uso: ``,
   erro: '',
