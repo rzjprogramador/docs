@@ -12,6 +12,20 @@
 https://www.apollographql.com/docs/apollo-server/migration/#graphql-playground`,
 
   },
+  configurar_playground: `
+  import { ApolloServerPluginLandingPageGraphQLPlayground,
+         ApolloServerPluginLandingPageDisabled } from 'apollo-server-core';
+  
+  // ADICIONAR CONFIG DO PLUGIN DO PLAYGROUND TRADICIONAL AO INVES DO SANDBOX : NO OBJ DE CONFIG DO APOLLO:
+
+  plugins: [
+    process.env.NODE_ENV === 'production'
+      ? ApolloServerPluginLandingPageDisabled()
+      : ApolloServerPluginLandingPageGraphQLPlayground(),
+  ],
+
+
+`,
 },
 
 
