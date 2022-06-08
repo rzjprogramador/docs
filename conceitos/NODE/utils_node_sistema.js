@@ -3,7 +3,8 @@
   este pode usar: 
   killall node
 
-  // obs #ATENCAO_PERIGO : nao usar estes abaixo: -- depois nao da acesso correto ao terminal ::
+  // obs #ATENCAO O TERMINAL VAI FICAR OCUPADO SÓ FECHAR O VSCODE E ABRIR DE NOVO:
+   -- depois nao da acesso correto ao terminal ::
   pkill -f node  >> ou >> pkill -f nodejs
 `,
 }

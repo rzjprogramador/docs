@@ -37,6 +37,16 @@ introspection: true,
     optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs)
 },
 
-
-
+// PROBLEMA ACESSO PLAYGROUND 
+// tutorial: https://github.com/strapi/strapi/issues/2309
+// ADICIONAR EM ./extensions/graphql/config/settings.json
+// COM A CONFIGURACAO
+{
+  "endpoint": "/graphql",
+  "tracing": false,
+  "shadowCRUD": true,
+  "playgroundAlways": true,
+  "depthLimit": 7,
+  "amountLimit": 100
+}
 

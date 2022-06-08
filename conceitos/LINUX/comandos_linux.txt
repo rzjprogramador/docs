@@ -7,3 +7,8 @@ comandos_linux_debian: {
     tudo_que_tiver_dentro: `rm -rf <Diretorio>`
   }
 }
+
+encontrar vscode instalado no linux :
+/home/rzj/.vscode
+
+encontrar extensoes vscode :: ~/.vscode/extensions
