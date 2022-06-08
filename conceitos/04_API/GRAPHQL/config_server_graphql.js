@@ -28,6 +28,15 @@ https://www.apollographql.com/docs/apollo-server/migration/#graphql-playground`,
 `,
 },
 
+// TENTANDO CONFIGURAR CORS GRAPHQL
+// Vhttps://expressjs.com/en/resources/middleware/cors.html
+
+introspection: true,
+  cors: {
+    origin: 'http://localhost:7777/',
+    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs)
+},
+
 
 
 
