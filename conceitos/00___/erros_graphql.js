@@ -1,10 +1,25 @@
-[ERROR] 16:31:08 
-GraphQLError: Syntax Error: Expected Name, found ")".
 
-onde esta : no graphql/typeDef ::  em type Query { findAllClientePj(): // uma consulta ja é uma funcao nao precisa dos () parenteses só referenciar a funcao igual feito no objeto Query: {}, 
-// solucao: retirar os parenteses
-ler_erro: `no [ERROR] 16:31:08  // aponta o errro, no  GraphQLError: diz o nome do erro ex: Syntax Error // e o que era esperado, e depois de "virgula" o que foi encontrado ai está o que é pra retirar ou consertar no 
-- caso esta falando :: Erro de sintaxe: Nome esperado, encontrado ")".
-// quer dizer estava esperando só um Nome que a referencia de funcao esperava como Retorno e encontrou parenteses ")"
+// LER ERRO GRAPHQL NO CONSOLE
+{
+  apontando_o_erro: `apos a classe:: GraphQLError: ela vai apontar a classe de Erro`,
+  possiveis_classes_de_erros: {
+    Syntax_Error: `se for Syntax Error o erro esta na tipagem no typeDefs dentro de Query ou Mutation na tipagem.`,
+  },
+  enconrtar_erro_na_mensagem_de_erro: {
+    o_que_esperava: `vem depois do "Expected"`,
+    o_que_encontrou: `vem depois do found`,
+    solucao: `arrumar ou remover o que esta depois do found dentro de aspas "no caso do exemplo eram parenteses que nao deviam estar la."`
+  },
 
-`
+  exemplos: {
+    exemplo_completo_erro_no_console: `[ERROR] 16:31:08 GraphQLError: Syntax Error: Expected Name, found ")".`,
+  },
+
+  erros_possiveis: {
+    sintaxe:{
+      tipagem_consulta_query: `uma consulta ja é uma funcao nao precisa dos () parenteses só referenciar a funcao igual feito no objeto Query: {},`,
+    },
+    solucao: `retirar os parenteses para referencias de metodo na tipagem de consulta Query nao precisa dos () as funcoes são só referencias ..obs: só coloca parenteses se a funcao pedir parametros.`,
+  }
+
+}
