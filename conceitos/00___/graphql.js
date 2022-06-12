@@ -1,3 +1,3 @@
 requisicoes_disponiveis: {
-  rota_unica_graphql: `http://localhost:7777/graphql`,
+  com_apollo_server: `http://localhost:7777/graphql`,
 }
