@@ -22,4 +22,11 @@
     solucao: `retirar os parenteses para referencias de metodo na tipagem de consulta Query nao precisa dos () as funcoes são só referencias ..obs: só coloca parenteses se a funcao pedir parametros.`,
   }
 
+  ler_erros_no_uso_playground: {
+
+    exemplo_de_erro: `"message": "Variable \"$comTipoUser\" of type \"Boolean\" used in position expecting type \"Boolean!\".",`,
+
+    explicando_erro: `dentro da variavel "message"`\"variavel com problema \ tipo do problema exemplo : type \ onde esta o problema na consulta do play ex: \"Boolean"\"o que ele esperava : usado no tipo de espera de posição"\ "A CORRECAO NA ULTIMA PARTE - ESPERAVA: \Boolean! >> COM OBRIGATORIDADE NO FINAL",
+  }
+
 }
