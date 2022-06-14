@@ -28,7 +28,7 @@
   sintaxe: `() => {} `,
   metodo_recebe: `recebe uma funcao que entao: da valor as variaveis declaradas no escopo global do test`,
   exemplo: `
-  // VAR GLOBAIS DISPONIVEIS PARA CADA TEST ::
+  // GLOBAIS::
   let userDataRequest: UserRequest
   let sut: IUser
 
@@ -40,10 +40,9 @@
       password: 'any_password',
     }
 
-    // METODO A SER TESTADO
-    // SUT É O METODO ::
+    // METODO A SER TESTADO --> SERÁ O SUT ::
     sut = createUser(userDataRequest)
-    
+
   `,
 },
 //
