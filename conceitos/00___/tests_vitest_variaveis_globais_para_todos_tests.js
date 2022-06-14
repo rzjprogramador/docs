@@ -28,20 +28,22 @@
   sintaxe: `() => {} `,
   metodo_recebe: `recebe uma funcao que entao: da valor as variaveis declaradas no escopo global do test`,
   exemplo: `
-  // VAR DISPONIVEIS PARA CADA TEST :: DEFINI-LAS COMO LET E DAR SEU VALRO NO beforeEach()
+  // VAR GLOBAIS DISPONIVEIS PARA CADA TEST ::
   let userDataRequest: UserRequest
-  let newUser: IUser
+  let sut: IUser
 
   beforeEach(() => {
+    // VALOR DAS VAR GLOBAIS::
     userDataRequest = {
       nome: 'any_nome',
       email: 'any_email',
       password: 'any_password',
     }
 
-    newUser = createUser(userDataRequest)
-    // VOU PODER USAR ESTA VAR EM TODOS TESTS
-  })
+    // METODO A SER TESTADO
+    // SUT É O METODO ::
+    sut = createUser(userDataRequest)
+    
   `,
 },
 //
