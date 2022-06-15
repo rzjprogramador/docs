@@ -1,6 +1,13 @@
 /*
-TODO : AINDA NAO CONSEGUE ENTENDER O PATH ALIAS
-- no seed do prisma .. todos arquivos ligados ao seed do prisma noa consegue netender ainda.
+// OK FUNCIONANDO PATH_ALIASES ::
+
+funcionando_path_aliases: [
+  'seed_prisma', 'graphql', 'core_typescript', 'vitest',
+
+],
+
+todo_ainda_nao_funciona_path_aliaes : `Sem TODO --> por enquanto tudo funcionando!`
+
 */
 
 // RESOLVIDOS :: ======================
@@ -38,6 +45,26 @@ TODO : AINDA NAO CONSEGUE ENTENDER O PATH ALIAS
   "_moduleAliases": {
     "@/": "./src/"
   },
+
+
+
+ `,
+*/
+
+/*
+> RESOLVENDO PATH ALIASES - PARA O SEED DO PRISMA COM TSCONFIG-PATHS
+ lib: yarn add -D tsconfig-paths
+ link: https://github.com/prisma/prisma/issues/6195
+
+ conceito:  `SEMPRE QUE QUISER RODAR ALGUM ARQUIVO DEPOIS DO SEU RODADOR DE ARQUIVO MANDE USAR A PORTA DA LIB/REGISTRADA ex: -r  tsconfig-paths/register prisma/seed.ts  // PARA RODAR O ARQUIVO SEED`,
+
+ uso: `
+ no package.json adicionar o script que aponta o caminho da variavel definida no modulo :
+ >> Para o prisma manda o compilador ts-node usar com -r , a porta da lib: tsconfig-paths/register >> Para rodar o arquivo prisma/seed.ts
+
+   "prisma": {
+    "seed": "ts-node -r tsconfig-paths/register prisma/seed.ts"
+  }
 
 
 
