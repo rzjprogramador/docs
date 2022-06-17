@@ -1,6 +1,8 @@
 {
   nome: `empacotamento de dados via parametros`,
-  conceito: `Melhor empacotar os dados enviados via parametros e dentro da funcionalidade desempacotar se for manipular...beneficio: Se for adicionar mais campos muda só no Contrato Request do Dado.`,
+  conceito: `Melhor empacotar os dados enviados via parametros e dentro da funcionalidade desempacotar se for manipular :: OBS: MELHOR DESEMPACOTAR SOMENTE NO SERVICO QUE É UM MANIPULADOR
+  ...beneficio: Se for adicionar mais campos muda só no Contrato Request do Dado.`,
+  
   exemplo: `
   // GRAPHQL SEM INPUT AINDA NO TYPEDEFS
   (_: any, data: UserRequest) => {
@@ -33,7 +35,7 @@
   // 2º - NO RESOLVERS : USA O 2º PARAM QUE É O ARGS PASSANDO ENTRE CHAVES o { data }
   INDICANDO QUE PARA PRIMITIVOS SERIA O ARGS QUE IRIA EXTRAIR OS PRIMITIVOS AGORA É UM OBJ INPUT REPRESENTADO PELA VARIAVEL O OBJ data entao entre chaves extrai ela { data }
 
-  // 3º - NO RESOLVERS : EXTRAI DENTRO DA FUNCIONALIDADE AS VARIAVEIS QUE ESTAO DENTRO DO OBJETO INPUT DATA SE FOR MANIPULAR ALGUMAS DELA.
+  // 3º - NO RESOLVERS : EXTRAI DENTRO DA FUNCIONALIDADE AS VARIAVEIS QUE ESTAO DENTRO DO OBJETO INPUT DATA SE FOR MANIPULAR ALGUMAS DELA. // OBS: MELHOR DESEMPACOTAR SOMENTE NO SERVICO QUE É UM MANIPULADOR
 
   `,
   no_uso_cliente_playground: `
