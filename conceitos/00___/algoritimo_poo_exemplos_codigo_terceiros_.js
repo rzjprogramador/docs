@@ -1,5 +1,7 @@
 {
   em_poo_classe_de_criacao_entidade_statica: `
+  link: 'https://github.com/rocketseat-content/youtube-node-testes',
+
   class User {
     id?: string;
     name: string;
