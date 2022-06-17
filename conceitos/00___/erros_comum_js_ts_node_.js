@@ -30,6 +30,10 @@
   solucao: `use o sinal para atribuir >> ":" para obj ou "=" para variavel`
 },
 
+erros_diversos: {
+  debugando_nao_ver_nada_no_console: `erro: net::ERR_FILE_NOT_FOUND -- NAO ESTA DANDO CONSOLE.LOG --NAO VAI CONSEGUIR VER NADA NO CONSOLE >>> DE CONSOLE.LOG NO QUE DESEJA VER.`,
+}
+
 
 
 /* MODELO
