@@ -13,4 +13,9 @@
   ideal_valor_de_propriedades_que_cada_objeto_tem_que_ter: `o ideal cada objeto ter como valor de suas propriedades somente valores do tipo primitivo ex: string, number, boolean e nao ter metodos ex: f () de funcao.`
 
   valor_de_prop_objeto: `Uma funcao dentro de obj no console mostra a funcao com valor : ƒ () que dizer este obj tem uma funcao e todos iguais a ele tambem tera..isto nao é viavel...cada objeto nao pode ter seus propros metodos em suas propriedades...tem que estar no prototipo para estar disponivel pra todos novos criados.`;
+
+  maquina_do_js: `A Engine do Js procura no __proto__ as propriedades que o objeto pode usar..la deve estar as funcoes que o objeto pode usar ..coloque manualmente via Funcao.prototype.suaFuncao = () {}  ou em 2022 pra frente o js ja faz isto automaticamente confira no console(seuObjeto.prototype se esat em __proto__ sua funcao como propriedade.)`,
+
+
+  
 }
