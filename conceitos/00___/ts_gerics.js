@@ -1,7 +1,32 @@
 {
   nome: 'Generics',
 
-  contexto: ``,
+  contexto: `
+  `,
+
+  uso: `Precisa declarar o Escopo Pai como generico, assim posso declarar algum filho como generico tambem
+   exemplo quero declacarar o metodo create como generico, mas ele esta no escopo da interface 
+   entao: decalro a interface Pai como generica ex:
+
+   interface UserRepository<T extends any | IUser = IUser> {
+    exist(email: any): Promise<boolean>
+    create(data: UserRequest): Promise<T>
+  }
+
+  // Para declarar o metodo create como generico SER POR ENQUANTO ATE DECIDIREM NO USO any
+  // tiver que tornar a interface onde ele se encontra como generica que Herda o tipo any ou Entidade e o default é IEntidade se ninguem passar nada no uso
+
+  // exemplo deste uso:
+  async create(data: UserRequest): Promise<any> // no metodo do Repositorio Prisma sera any este retorno escolhido mas em outro lugar podera ser IEntidade
+
+   
+   
+  `,
+
+  tutoriais: [
+    'https://stackoverflow.com/questions/39418371/unresolved-type-t-when-creating-an-arrayt-with-generic-in-typescript',
+
+  ]
 
   explicado: `
   GENERICS
