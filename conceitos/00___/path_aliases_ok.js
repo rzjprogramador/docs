@@ -2,7 +2,7 @@
 // OK FUNCIONANDO PATH_ALIASES ::
 
 funcionando_path_aliases: [
-  'seed_prisma', 'graphql', 'core_typescript', 'vitest',
+  'seed_prisma', 'graphql', 'core_typescript','javascript buildado na pasta dist/', 'vitest',
 
 ],
 
@@ -64,6 +64,32 @@ todo_ainda_nao_funciona_path_aliaes : `Sem TODO --> por enquanto tudo funcionand
   }
 
 
+
+ `,
+
+// RESOLVENDO PATH ALIASES - PARA O BUILDADO JAVASCRIPT NA PASTA DIST
+ lib: 'yarn add module-alias',
+ link: '',
+
+ conceito:  `SEMPRE QUE QUISER RODAR ALGUM ARQUIVO DEPOIS DO SEU RODADOR DE ARQUIVO MANDE USAR A PORTA DA LIB/REGISTRADA ex: -r  tsconfig-paths/register prisma/seed.ts  // PARA RODAR O ARQUIVO SEED`,
+
+ uso: `
+ no package.json adicionar o script que mapeiar "DE : PARA"
+ DE: @src  PARA: "dist"
+ // Porque na dist tera um index.js que ele vai procurar como primeiro arquivo da app que tambem esta careegado o module-alias/register apontado no TS ...ele vai procurar este primeiro arquivo buildado que é o que levanta a aplicacao.
+ >>
+ exemplo:
+
+ "_moduleAliases": {
+  "@src": "dist"
+},
+
+// NO TSCONFIG JA ESTA MAPEADO APRA NESTA VARIAVEL IR PARA A SRC
+"rootDir": "src",
+    "baseUrl": "src",
+    "paths": {
+      "@src/*": ["*"]
+    },
 
  `,
 
