@@ -1,9 +1,0 @@
-padrao_projeto: {
-
-  unica_instancia: `
-  ao invez do singleton usar objeto freeze que congela o objeto 
-  > https://www.patterns.dev/posts/singleton-pattern/
-  `,
-
-  
-}

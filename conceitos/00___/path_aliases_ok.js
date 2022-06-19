@@ -1,4 +1,4 @@
-/*
+
 // OK FUNCIONANDO PATH_ALIASES ::
 
 funcionando_path_aliases: [
@@ -8,12 +8,11 @@ funcionando_path_aliases: [
 
 todo_ainda_nao_funciona_path_aliaes : `Sem TODO --> por enquanto tudo funcionando!`
 
-*/
+
 
 // RESOLVIDOS :: ======================
 
-/*
-> RESOLVENDO PATH ALIASES - CAMINHOS MAPEADOS PARA VITEST
+// RESOLVENDO PATH ALIASES - CAMINHOS MAPEADOS PARA VITEST
  lib: yarn add vite-tsconfig-paths
  doc_lib: https://www.npmjs.com/package/vite-tsconfig-paths
 
@@ -27,10 +26,9 @@ todo_ainda_nao_funciona_path_aliaes : `Sem TODO --> por enquanto tudo funcionand
 
 
  `,
-*/
 
-/*
-> RESOLVENDO PATH ALIASES - CAMINHOS MAPEADOS PARA GRAPHQL RESOLVERS E QUEM PRECISAR COM MODULE ALIAS
+
+// RESOLVENDO PATH ALIASES - CAMINHOS MAPEADOS PARA GRAPHQL RESOLVERS E QUEM PRECISAR COM MODULE ALIAS
  lib: yarn add module-alias
  link: https://stackoverflow.com/questions/60067281/typescript-path-aliases-not-resolved-correctly-at-runtime/60131288#60131288
 
@@ -49,10 +47,9 @@ todo_ainda_nao_funciona_path_aliaes : `Sem TODO --> por enquanto tudo funcionand
 
 
  `,
-*/
 
-/*
-> RESOLVENDO PATH ALIASES - PARA O SEED DO PRISMA COM TSCONFIG-PATHS
+
+// RESOLVENDO PATH ALIASES - PARA O SEED DO PRISMA COM TSCONFIG-PATHS
  lib: yarn add -D tsconfig-paths
  link: https://github.com/prisma/prisma/issues/6195
 
@@ -69,4 +66,4 @@ todo_ainda_nao_funciona_path_aliaes : `Sem TODO --> por enquanto tudo funcionand
 
 
  `,
-*/
+
