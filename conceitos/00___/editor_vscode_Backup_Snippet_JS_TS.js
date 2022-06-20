@@ -59,7 +59,7 @@
     //
     "vitest": {
       "scope": "javascript,typescript",
-      "prefix": "vitest describe",
+      "prefix": "test vitest describe",
       "body": [
         "import { describe, it, expect } from 'vitest'",
         "",
