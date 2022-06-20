@@ -1,5 +1,7 @@
 {
   BACKUP_SNIPPET_TS_JS: `
+  // INICIO  //======================================
+
   {
     // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
     // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
@@ -45,20 +47,16 @@
     "metodo__interface--ts": {
       "scope": "javascript,typescript",
       "prefix": "metodo__interface--ts",
-      "body": [
-        "async ${1:metodo}: () => Promise<${2: tipo}[]>"
-      ],
+      "body": ["async ${1:metodo}: () => Promise<${2: tipo}[]>"],
       "description": "method__interface--ts"
     },
     "metodo__classe--ts": {
       "scope": "javascript,typescript",
       "prefix": "metodo__classe--ts",
-      "body": [
-        "async ${1:metodo}(): Promise<${2: tipo}[]> {}"
-      ],
+      "body": ["async ${1:metodo}(): Promise<${2: tipo}[]> {}"],
       "description": "method__interface--ts"
     },
-    // 
+    //
     "vitest": {
       "scope": "javascript,typescript",
       "prefix": "vitest describe",
@@ -67,12 +65,15 @@
         "",
         "",
         "describe('Categoria', () => {",
-        "    it(`[] deve  `, () => {})",
+        "    it(`[] deve  `, () => {",
+        "",
+        "        expect(true)",
+        "    })",
         "})"
       ],
       "description": "vitest"
     },
-  //
+    //
     "export-modulo-classe__JS": {
       "scope": "javascript",
       "prefix": "export-modulo-classe__JS",
@@ -87,11 +88,7 @@
     },
     "comment": {
       "prefix": "comment",
-      "body": [
-        "/*",
-        "* $0",
-        "*/"
-      ],
+      "body": ["/*", "* $0", "*/"],
       "description": "comment"
     },
     "class": {
@@ -107,25 +104,19 @@
     "interface": {
       "prefix": "export interface - typescript",
       "scope": "javascript,typescript",
-      "body": [
-        "export interface ${TM_DIRECTORY/^.+\\\\/(.*)$/$1/}$1 {$2}",
-      ],
+      "body": ["export interface ${TM_DIRECTORY/^.+\\\\/(.*)$/$1/}$1 {$2}"],
       "description": "interface"
     },
     "export tudo": {
       "prefix": "export tudo",
       "scope": "javascript,typescript",
-      "body": [
-        "export * from '.$1'"
-      ],
+      "body": ["export * from '.$1'"],
       "description": "export tudo"
     },
     "eslint nao usar var": {
       "prefix": "eslint nao usar var",
       "scope": "javascript,typescript",
-      "body": [
-        "/* eslint-disable no-unused-vars */"
-      ],
+      "body": ["/* eslint-disable no-unused-vars */"],
       "description": "eslint nao usar var"
     },
     "objeto": {
@@ -173,10 +164,7 @@
     "var__obj_repete": {
       "prefix": "var__obj_repete",
       "scope": "javascript,typescript",
-      "body": [
-        "${1:var}: `$2`,",
-        "$3"
-      ],
+      "body": ["${1:var}: `$2`,", "$3"],
       "description": "var"
     },
     "obj-estudo": {
@@ -211,6 +199,7 @@
     }
   }
   
-  // ====================================================
+  // FIM  //======================================
+
   `,
 }
