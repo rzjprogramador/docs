@@ -7,6 +7,7 @@
 // SUCESSO
 {
   deve_ter_a_propriedade: `toHaveProperty('id')`,
+  deve_ter_alguma_informacao: `toBeTruthy()`,
 
 }
 
