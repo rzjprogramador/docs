@@ -1,13 +1,490 @@
 {
   ANOTADOS_CLASSIFICAR: `
   
+  PGM // =========
+
+classificacoes:  
+para classificar pergunte " O QUE É" cada item que tenho dentro de "ONDE CLIENTE DESEJA CRIAR"
+ex: 
+tenho: que vender lapis,caneta, camisa,
+cliente_deseja_criar: Ecommerce,
+como_fica_pensamento_completo: `o que é lapis, caneta, camisa ...dentro de um ecommerce? 
+resposta: Produto.
+entao_classifico_como: Produto
+
+=====
+funcao:
+parametro: sao input entradas de dados de uma funcao...o dado entra é manipulado e é devolvido com a clausula retun
+
+argumento: ficam entre os () na invocacao da funcao... é o que o cliente usa/ preenche /responde os parametros de entrada de dados da funcao.
+
+retorno: é a saida via clausula return da funcao , apos a funcao permitir entrar os dados entrarem pelos params, ele é manipulado e devolvido pronto com a clausula return ...ficara  publico o valor do dado pronto pra quem invocar a funcao .
+
+================
+
+TS // =======
+TYPE UTILITS
+conceito: passe sempre para um type alias e se for propriedades que for usar passe como string dentro de "".
+use os operadores logicos | "OU " ou & "E".
+ 
+parcial : Partial <DoTipo> // deixa no alias  tudo opcional.
+
+pegue: Pick <DoTipo> // pega do tipo só o que desejas.
+
+omita: Omit<DoTipo> // ao inverso do pick ele omite
+
+=============
+
+NOVO OBJ::
+campos opcionais, id, ..na criacao sao configurados com valores do sistema ou cria-dos a parte.
+
+
+........
+
+//  LICAO DE CASA   //=====================
+parei no 31:20 do test Rocket dani >> https://www.youtube.com/watch?v=18Dgf7lb9QA&t=1688s
+// Minha app ok tests até o Service do User
+
+.......
+
+PROTOTYPE
+no construtor do objeto _proto_ tem que mostrar qual é  a funcao ou classe que criou os metodos disponiveis no proto.
+aula : 95 - Heranca Js OtavioM.Programacao tem muito da matematica.
+
+METODO DO ARRAY : find() buscar() faz uma equacao pra saber qual é o igua5l procurado.
+tutorial equacao : https://youtu.be/zIk2L2vdAkg
+....
+conceito: `para usar algo este tem que estar guardado na memoria.`,
+
+o_que_quero_e_posso  : tudo que quero fazer ...esta relacionado ao  "posso" da ferramenta... se a ferramenta dispoem.
+
+pegar_algo: `é um getter , uso um comando, ja guardado na memoria...posso usar direto ou dependendo com alguma clausula pra de retorno.`,
+
+se_estou_pegando: {
+  e_porque: quero pegar e mostrar | tornar publico pra fora | compartilhar algo.
+}
+
+setar_configurar_algo: `
+é um setter vou configurar um valor ou obter algo, uso direita e esquerda. separados por sinal de atribuicao e assim tenho algo configurado com valor e guardado na memoria posso continuar evoluindo ou retorna-lo pra outro que precise de algo pronto na memoria usar.
+
+`,
+se_estou_setando: {
+  e_para: quero criar |quero obter_guardar |  modificar algo
+},
+
+guardar_algo_na_memoria: {
+possibilidades: [recipiente esquerda, 'valor_direita, jaGuardado ],
+
+quando_preciso_o_que_e: {
+  recipiente: tudo a esquerda antes de sinal de atribuicaoa...é onde obtenho e espera um valor.
+  
+separacao: 'esquerda e direita sao separados por sinal de atribuicao :: ":" para objetos Filhos .... e "=" para propriedades Pai',
+
+valor:é tudo a direita depois do sinal de atribuicao ... onde ou ja é uma ultima instancia de primitivo  é valor final,  ou se nao for primitivo é caminho encadeado de  variavel || objeto tendo && .metodo que levam ou trazem o valor.
+},
+
+esquerda : chave | referencia| como o valor vai ser acessado |  que obtem e guarda. >> lugar na memoria.
+
+direita: valor | informacao |  ocupa na memoria.
+
+se nao usar esquerda e direita nem sinal de atribuicao é um comando , algo pronto resolvido .... e esta ja estara usando uma informacao ja guardada na memoria.
+.....
+
+com este conjunto esquerda direita separados por atribuicao : posso :: [ obter, criar, modificar algo ],
+
+....
+valores: {
+  conceito: 'é tudo a direita que vem depois do sinal de atribuicao...quem o usa copia o seu tipo de valor ..e cada um tera seu local na memoria ,
+  
+possibilidades: [primitivo , referencia ]
+},
+
+primitivo: {
+conceito:  'sao imutaveis ...vc muda o conteudo mas nao muda o tipo.'
+
+exemplos: ' string, number, boolean, undefined, null',
+}
+
+referencia: {
+conceito: ` é mutavel podemos mudar seu tipo, quem o usa aponta para o mesmo valor na memoria.
+
+ objeto.metodo ou chave ultima instancia que leva ao valor  final, referencia objeto.metodo ou chave ultima instancia que leva ao valor final. `,
+
+exemplos: ` variavel, objeto, metodo.`,
+}
+.....
+
+Pai : é um criador.
+Filho: é o que usa.
+
+exemplos_Pai : [ 
+
+ ],
+
+exemplos_Filho : [ 
+
+ ],
+
+contextos_Pai_e_Filho: [ 
+
+ ],
+......
+modificacoes: {
+  transformar_dado_recebido: {
+    conceito: `receber o dado, transformar e devolver modificado.`,
+    
+o_que_transforma_um_dado_recebido: `um metodo ja pronto e passamos nosso dado `,
+}}
+
+criar_dado_com_combinacoes: {
+  em uma expressao combina variaveis usando operadores e o resultado atribui a uma variavel resultado.
+  pronto tera um dado criado
+}
+
+.......
+
+operadores_logicos:
+
+tecnologia: Javascript_Typescript
+
+conceito: `os operadores logicos sao para_formar_instrucoes para chegar a um valor.`,
+
+ E_ algo_e_outro: ' && ',
+ 
+ OU_algo_ou_outro: '!!',
+ 
+ afirmacao_garantindo: 'variavel_!  interrogacao apos valor',
+ 
+ negacao_negando: 'interrogacao antes do valor',
+
+transforma_em_boleano: 'Duas interrogacoes antes do valor se o valor for falso retorna false ou verdadeiro retorna true'
+
+�odigo
+
+no console log quando debuga
+
+.......
+
+
+// GETTERS E SETTERS  // =============
+
+/* 
+SETTER 
+RESPONDENDO :: 
+- RECEBO A PERGUNTA (S)
+- MANIPULO AS PERGUNTAS RECEBIDAS
+- RETORNO NO TIPO DESEJADO A RESPOSTA(S)
+
+*/
+function respondendo(pergunta1, pergunta2) {
+  const res1 = pergunta1.toUpperCase()
+  const res2 = pergunta2.toLowerCase()
+
+  return { res1, res2 }
+}
+
+console.log(respondendo( 'Rei', 'Zacharias') )
+
+// -----------------
+/*
+GETTER 
+MOSTRANDO O QUE VEM EXTERNO
+
+*/
+const mostrar = true
+const propExterna1 = 'Info de Fora1'
+const propExterna2 = 'Info de Fora2'
+
+function mostrando() {
+  return mostrar ? { propExterna1, propExterna2 } : 'Falso'
+}
+
+console.log(mostrando())
+======================/
+
+//  ASYNC   //=====================
+uma funcao que tem async é uma promessa pendente Pendenty...se for usa-la em outro escopo coloque await na frente da expressao de uso para esperar esta promessa se resolver.
+...
+
+
+
+//   TESTS SEM.FRAMEWORKS  //=====
+
+/*
+• COM FUNCAO ASSERT() --CONSOLE.LOG PARA VER RESULTADOS
+• - OBSERVACAO A CADA TEST COMENTAR APRA NAO INFLUIR NO OUTRO
+tutorial - ligeirinho : https://www.youtube.com/watch?v=gHTzdE8bMhM&t=13s
+*/
+
+function assert(value) {
+  if(!value) { throw new Error('Invalid value -1')}
+  return 'ok'
+}
+
+// console.log('Testing 1 == 1')
+// assert(1 == 3)
+
+
+function sqr(num) { return num * num }
+
+console.log('test sqr()')
+assert( sqr(4) == 11 )
+
+//  YOUTUBER  //=====================
+
+Videos como estreia, assim avisa inscritos que tera o video para acompanharem.
+...
+
+//  LINUX  //=====================
+
+# INSTALAÇÕES LINUX:
+
+sudo apt install nodejs
+sudo apt install npm
+
+=======
+COMANDOS
+
+history :: mostra historico de comando executados
+tutorial: https://marquesfernandes.com/desenvolvimento/como-ver-o-historico-de-comandos-no-terminal-linux-usando-o-comando-history/?amp=1
+.....
+
+===========
+DESKTOPS : 
+LXDE :: O mais leve acho q tem para Lubuntu
+LXQT :: Vem no Lubuntu
+
+
+Leves ::
+LUBUNTU Mini-Iso
+LXDE
+
+....
+Atualize o gerenciador de pacotes e o sistema :
+
+sudo apt update && sudo apt upgrade
+...
+NAVEGADORES
+
+TESTAR
+Brave Browser
+
+
+....
+Comando encontrar pasta:
+find / -iname nonedoarquivooupasta
+
+https://www.facebook.com/groups/1396850957290262/permalink/2772183259757018/
+....
+
+Pra ver onde esta salvo um pacote global
+with <pacote>
+
+Pacotes globais instalados estao em user/local/bin
+{ usuario local binarios }
+
+...
+Linux recomendado Instalar 
+customizada Ubuntu minimal com Lubuntu 20.04
+https://youtu.be/wgbvUgvcRFQ
+.....
+Lubuntu 21.04
+Familia QT mais leve que GTX ?
+https://youtu.be/myt1YMpG3EQ
+.....
+adicionar binario no Path
+https://youtu.be/zNPJhUDl68w
+......
+Dicas Linux : https://www.facebook.com/100007949318439/posts/3113785452229735/?app=fbl 
+
+dicas :
+Não use derivadas de derivadas como Mint e Zorin, use :
+MX Linux que é derivada direta do Debian. Estável e roda até em uma batata.
+.....
+
+//   TESTS VITEST  //===============
+
+no test é como se fosse o main
+- sut :: é a classe a sér testada
+- createSut() -- é como instanciacao da classe ai o sut vira a instancia
+- depois fazemos as operacoes na intancia
+- e no esperado conferimos as operacoes.
+
+//  TDD  //=====================
+# Modularizacao:
+
+- BORDA::  -CASA  - WRAPPER
+- COMPONENTE::  -  COMODO- OBJ
+- PROP :: DADO - CHAVEeVALOR
+
+Sempre abstrai em no minimo 2 nivel de camada ..a fonte que traz resultado.
+.....
+
+em domain :: só protocolos
+em dataLayer / service : implentacoes dos protocolos
+
+...
+
+# Variavel que pode conter ou nao valor inicial :
+Por padrao no js uma var ja comeca undefined
+No ts tenho q avisar o compilador que ela pode comecar indefinida :: anotando tipo ou undefined ou sugar usando o ? na frente indico que ela pode ser de um tipo ou indefinida
+
+- Se ela for declarada no constructor eu obrigo ela a ter valor inicial
+
+....
+- Nao posso mexer em um componente por mais de um motivo :: entao dou uma responsabilidade somente para cada componente.
+
+---
+NOMEACOES :: NOMES ::
+para Classe Principal dou o nome da intencao do que ela vai fazer.
+- o nome do metodo unico  é só pra executar o que ela vai fazer
+
+---
+# Pular Linhas ::
+- No codigo de producao nao pulo linhas  em um bloco
+- - No codigo de test pulo ...pra ao olhar saber que estou executando a cada linha pulada o Arranjo / Acao / Afirmacao
+
+---
+ETAPAS DE COMPILACAO E TEST
+tdd: tecnoca :: red green refactory
+
+VERMELHO - AMARELO - VERDE:
+- vermelho: cria as instancias - * Cria as Classes
+- amarelo: cria as estruturas: classes e interfaces
+- verde: completa o conteudo das estruturas para compilar.
+
+--- 
+REGISTRO
+---
+CasoDeUso == RegraDeNegocio / Logicas/ ficara no diretorio domain /useCases/ sera o objetivo.ts
+---
+
+// FLUXO TEST:
+- Comeco pelo CasoDeUso. 
+
+---
+Repositorio :: na clean > Guateway :: obtem dados de qualquer fonte de dados.
+
+---
+
+DOMINIO :: Os casos de Uso :: Autenticação -> atenticacao param -- ContaDaEntidade
+
+DATA LAYER :: Camada de Dados :: Onde fica a implementação do Caso de Uso ::
+Regras de Negocio :: 
+
+- no dataLayer vai um service :
+para cada casoDeUso tera um service
+
+- servico nao acessa Banco -- quem intermedia e um repositorio
+
+Buscam do httpClient
+Que Busca do Adapter
+Que traz dos Externos Frameworks
+---
+Regras de Negocio nao fica em component generico / que todos usam
+
+.....
+Nao fazer todas acoes dentro de um compoment -- criar classes auxiliadoras para distribuir responsabilidades.. e injetar no Componente Pai que vai usa-la
+....
+injetar :: é passar por param uma variavel ou obj
+
+intancia :: objeto, filho da classe
+---
+
+MAPEAR O QUE É O QUE É
+- Internos :: Entidades | Controles | 
+
+- Intermediadores :: Repositorios | 
+
+- Externos :: Bancos | 
+
+- CasoDeUso :: Comportamento das Entidades
+
+- Comportamento Entidades : create, update, delete, list, listUnique,⁶
+---
+
+REGRAS DE DEPENDENCIA :: Dependencie Rule
+- Internos -- nao podem depender de externos.
+
+//    CLEAN MANG //=====================
+Camada DOMINIO :: DOMAIN
+diretorios: entidades + casouso
+
+contexto:  só  dados e contratos
+
+- entidades :: contrato
+- 
+- casoObjetivo :: contrato :: traz os dados:: tem um metodo somente que diz o q vc quer fazer.
+- 
+> dominio nao importa ninguem
+> dominio vai ser implementado pela camada :: DATA
+> vai ser usado pelo camada de apresentação. 
+
+....
+Camada de DADOS : DATA
+diretorios: service + contracts 
+
+contexto: 1x1 para cada casouso tera um servico implendo
+
+- contracts : vao contratos das dependências (repo )
+- 
+> data só importaria vindo do dominio, mas pra posteriormente a infra que vai implementar nao conhecer do dominio o data cria um model ou dto espelhado no domnio.
+
+> delega e usa um repo.
+> servico :: onde no metodo especifico vai a Regra de Negocio.
+
+....
+INFRA
+diretorios:  repositories + data-sources(para dadosFake |  listaPdfDados | requestFileUpload  )
+
+-repositories :: este nome porque vai implementar um repo do infra.
+-repo vai ser um adaptador pode usar um mapper para adaptar o que vai receber da api com o modelo que quer seguir na app.
+
+infra só importa da camada de Data
+
+infra sao implentacoes dos contratos do data
+infra vai implementar repo que é contrato no data.
+
+...
+APRESENTACAO :: PRESENTATION
+tera os arquivos que o principalDesteDiretorio (Controlador) vai precisar pra retorno etc...
+
+contem arquivos : controller//presenter + view-model (sera + uma abstracao do modeloEntidade com os campos no tipo ideal para a view da api que é json)
+
+- controle :: vai acessar o casoUso
+- controlador vai gerenciar uma breakpoint( rota /ou/ queryGraph)
+- controlador vai consumir dados do casoUso
+...
+
+....TYPESCRIPT::
+- Sempre tipar os Erros, 
+- Comparar Tipo com tipo e melhor que comparar strings. por isto dê tipo aos erros.
+
+
+//  JAVASCRIPT  BASE  //================
+// METODO PARA CONDICIONAIS : 
+
+// CONTINUE :: CLAUSULA JS PARA PULAR OMITIR UM VALOR PASSADO EM CONDICIONAL.
+
+// QUERO PULAR - NAO PEGAR UM VALOR USO O CONTINUE
+const numeros = [1, 2, 3, 4 ,5]
+
+for (let num of numeros) {
+  //console.log(num) // var num é os alvos a cada interacao.
+  if(num === 2) {
+    continue
+  }
+   console.log(num)
+}
+............
+
+
   LICAO CASA JUN/22
 // 
 
-- path alias para js buildado Mang aos 12:00 
 
 TESTS COM REPO INMEMORY
-RepoInMemory -- Dani tests aos 13:52 : https://youtu.be/18Dgf7lb9QA
+
 
 aos 26:25 porque usar o RepoInMemory pra testar na suite...assim vc usa o repo em memoria e testa se esta funcionando o servico , o contrato de Repos e a Classe Entidade com o seu objetivo neste caso de criar.
 
