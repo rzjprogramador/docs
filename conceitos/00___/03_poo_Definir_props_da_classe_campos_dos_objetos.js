@@ -14,4 +14,10 @@
     { this.props = props } // NO BLOCO QUE CONSTROI
 
    `,
+
+   definir_propriedades_da classe_via_funcao_do_construtor: {
+     construtor_uso_cliente: {
+       conceito: `Onde chamar o "new" estará fazendo a invocacao da funcao  construtor() da classe e passara em argumentos os aprametros que nele foi integrado.`
+     }
+   }
 }
