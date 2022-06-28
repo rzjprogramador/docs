@@ -482,19 +482,19 @@ adapters: {
   exemplos: [injections, adapters ],
   },
   
-  externos: {},
-  
-  globals: {},
-
 },
 
-database: 
+external: {
+  database: 
   conceito: `camada que se cknecta ao banco de dados e implementa os contratos de repositios do dominio`,
   
 exemplos: [orm_prisma, _connect_db, postgres_repo, ]
 
-}
+},
 
+globals: {},
+
+}
 
 .....
 1x1: conceito: acoes que o usuario pode fazer ::  no repo :: usecase >> no banco :: transacao
