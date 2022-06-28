@@ -219,6 +219,202 @@ funcao_callback: {
 conceito: `Callback são bem usados quando vc deseja criar funções mais genéricas, segue um exemplo de uso.
 
 Vc cria uma função para exportar uma tabela para PDF, Excel etc... Essa função pode ter um callback para que quando o código termine de fazer a exportação, ele chame o callback para fechar um popup ou aparecer um alerta que a exportação foi feita.`,
+
+detalhes: `
+
+aulacallback :: https://blog.unicorncoder.dev/callbacks-javascript/
+....
+
+Callback :: funcao que vai ser chamada ou executada depois
+
+geralmente vem no ultimo param.. com a funcao de dar um retorno de algo depois de executado o parametro anterior ex: 
+mandei no 1° param rodar na porta 3333 e como callback depois uma anonima mostrando as informacoes que deu certo o primeiro.
+
+entao : uma anonima em ultimo param dizendo que a primeira tarefa deu certo.
+.....
+
+
+ QUANDO PRECISO FAZER DUAS OPERACOES DIFERENTES NA MESMA FUNCAO
+exemplo: Somar e depois Multiplicar ::
+
+Funcao Callback executa depois , é uma funcao por param q executa sobre o valor de uma resultado da primeira funcao , ela faz outra funcionalidade sobre o resultado de uma funcionalidade.
+
+Pode ser usada dentro da funcao depois da primeira instrucao ou na invocacao
+
+é assinalada na ultima posicao dos  parametros
+
+exemplo:
+function somaMultiplica(a, b, fazDepois) {
+    return a + b
+
+    fazDepois = function(totalDaSoma)  {
+    totalDaSoma * 3
+    
+}
+
+}
+somaMultiplica(2, 4, fazDepois)
+// vai dar 6 * 2 totalizando
+
+// ---------------
+const resp1 = (back) => back('resp x1')
+
+const outra2 = (back) => resp1((lower) => back(lower))
+
+//Mostrar na tela
+outra2((magica) => console.log(magica))
+ 
+/*
+CALLBACK :: HIGH ORDEM FUNCTION
+  CENARIO::
+- Uma funcao recebe uma func e retorna Algo
+- outra func vai receber a msm func q a outra recebeu
+e vai executar a primeira func recebendo uma func pra fazer por ultimo
+esta func recebe o param desta func que aguardava resolver o da outra
+
+--> usar
+invocar a segunda e injetar uma varInvent ecretornar esta var na amostra
+
+
+*/
+// --------------
+
+# Descrever Funcionalidade ::  CALLBACK ::
+
+--------------------------------------
+
+// O QUE QUER DIZER  :: CALLBACK ::
+      callback === ligar de volta
+--------------------------------------
+
+// CONCEITO RESUMIDO :: CALLBACK ::
+      executar depois
+--------------------------------------
+
+// QUANDO USAR  :: CALLBACK ::
+      
+      Tudo que é delegado a terceiros e necessita de uma resposta se deu certo ou nao
+      Ler ou executar mais que um arquivo
+      Enviar email
+------------------------------------
+
+// EXEMPLO :: CALLBACK ::
+      array.filter(param1 => param1.includes("minha busca no array"))
+--------------------------------------
+
+// O QUE POSSO FAZER COM :: CALLBACK ::
+      Uma função por parametro
+--------------------------------------
+
+// O QUE ESPERA :: CALLBACK :: 
+      uma função por parametro
+--------------------------------------
+
+// Sintaxe :: CALLBACK ::
+      (param => param/argumento.metodo)
+--------------------------------------
+
+// Exemplo Otimizado :: CALLBACK ::
+
+array = ["pais Reinaldo", "pais Renata", "Gustavo", "Leonardo"]
+
+novoArray = array.filter(param => param.includes("pais"))
+
+console.log(novoArray)
+
+
+# ==============================
+
+/*
+======== CALLBACK === LIGUE DE VOLTA === Depois do metodo ele vai retornar sucesso ou insucesso =====================================
+É UMA FUNÇÃO DENTRO DA OUTRA PASSADA POR PARAMETRO
+Quando um metodo assincrono termina a execucao ele é chamado 
+Voce tem uma metodo assincrono - Voce liga seu callback -- quando esse metodo assincrono é concluido --sua funcao callback é chamada 
+
+*/
+
+/* 
+1- Inicialização : CALLBACK É UM METODO QUE VC APONTA ELE POR PARAMETRO NA FUNÇÃO QUE DESEJA QUE ELE SEJA EXECUTADO DEPOIS DELA 
+    ex:   metodo(param1, param2, callbackNome)
+
+2- Processamento : INVOCA ELA DENTRO DA FUNÇÃO ANTES DO FIM DO ESCOPO  
+Ex: DENTRO DO ESCOPO DA FUNÇAO ASSINCRONA EXECUTA-LA ::: callbackNome()
+
+3- Invocação: Em forma de arrow function na invocação do metodo que ela esta sendo ligada e em forma de atribuição da funcao assincrona: 
+    ex:
+    enviarEmail('texto', 'texto, () => { --AKI CONTEUDO DO MEU CALLBACK -- })
+*/
+
+
+
+function enviarEmail(corpo, para, callbackNome) {
+    setTimeout(() => {
+        console.log(`
+            Para: ${para}
+            ---------------------------------------
+            ${corpo}
+            ---------------------------------------
+            De: Reinaldo Programador
+        `)
+        callbackNome()
+    },3000)
+}
+console.log('INICIO DO ENVIO DE EMAIL')
+enviarEmail('Oi seja bem vindo aos CONECTADOS', 'reinaldo@email.com', () => {
+    console.log('ISSO É UM CALLBACK -- CONFIRMANDO A FUNCAO QUE FOI ASSINCRONA')
+    console.log('Seu email foi enviado , deve chegar em minutos ')
+    console.log('TUDO OK')
+})
+
+// -------------
+// Mais exemplo callback ::
+
+function enviarEmail(para, msg, back) {
+  setTimeout(() => {
+
+    console.log(`Enviando Email...`)
+
+    setTimeout(() => {
+      back(5)
+    }, 4000)
+    
+  }, 2000)
+  
+  
+}
+
+enviarEmail('foo@email', 'bar msg',(segundos) => {
+  console.log(`enviando back depois em ${segundos} segundos`)
+})
+
+// ---------‐--
+
+// Treino callback
+
+// primeiro
+function mostraNome(nome) {
+  return nome
+}
+
+// depois : callback - 
+function callSucesso() {
+   alert('INSERIDO COM SUCESSO')
+}
+
+// recuperar
+function useNome(mostraNome,call) {
+   alert(mostraNome)
+   call()
+}
+
+//mostrar
+
+useNome('Reinaldo', callSucesso)
+
+// -----
+
+
+`,
 },
 
 getter buscar um conjunto nao tem params e sempre retorna o tipo do que procura
@@ -509,6 +705,108 @@ delete reinaldo.idade
 reinaldo.idade = 45
 // console.log(reinaldo)
 
+MAIS SOBRE OBJETOS
+
+// Objeto sao uma colecao de variaveis e metodos
+
+const user = {
+  nome: 'Reinaldo',
+  idade: 43,
+  profissao: 'Programador',
+  youtube: 'RzjProgramador'
+}
+//Como extraia variaveis do obj tradicionalmente 
+// var nome = user.nome
+// var idade = user.idade
+
+// Extraindo variaveis de obj com Destruct - nao precido criar vars e atribuir do obj.prop ele ja extrai e cria 
+
+const { nome, idade } = user
+
+// trocar nome de variavel , passa o valor de uma variavel existente no obj para uma nova ha existir
+const { youtube: novoCanal } = user
+console.log( novoCanal )
+
+// -------------
+// Extrair prop. de obj aninhado
+userAninhado = {
+  nome: {
+    primeiro: 'Valor do Primeiro',
+    ultimo: 'Valor Ultimo '
+  }
+}
+
+// extraindo aninhado tradicional 
+// const novaVar = userAninhado.nome.primeiro
+// console.log(novaVar)
+
+// extraindo obj aninhado  -- extrair pelas chaves com { a cada camada
+const { nome: { primeiro, ultimo } } = userAninhado
+console.log(primeiro)
+console.log(ultimo)
+
+ Falback - criar uma prop. no obj que nao existe ainda, e se vier a existir ela é sobrescrita
+// obs: a falback nao fara parte do obj ...é somente uma variavel solta
+
+let user3 = {
+  primeiro: 'primeiro'
+}
+let { segundo = 'segundo' } = user3
+
+console.log( segundo )
+
+//  ------------------------------------------
+
+// Destruct extraindo props obj em params de 
+
+const imprimeUser = ({ nome, foo }) => {
+  return `${nome} - ${foo}`
+}
+
+const user4 = {
+  nome: 'fulano2',
+  foo: 'bar'
+}
+
+console.log( imprimeUser( user4 ) )
+
+//obs: Se ja tenho um console.log dentro da funcao nao posso dar outro ao querer mostra-la na invocacao da undefined.
+
+// ---------------------------------
+
+// Object.keys retorna array de chaves do obj
+// Object.values retorna array de valores das chave do obj
+
+const user5 = {
+  nome: 'fulano1',
+  foo: 'bar'
+}
+
+console.log( Object.keys( user5 ) )
+console.log( Object.values( user5 ))
+
+// ---------------------------------
+Testando ::
+
+const obj1 = { 
+   nome: 'Reinaldo',
+   idade: 43,
+   hobbies: ['Futebol', 'Musica', 'Estudar'],
+   linguegens: [{web: ['Html','Css', 'Jquery']},
+       {back: ['Node', 'Go', 'Java', 'Python'] 
+  }]
+
+}
+
+// Acessando :
+
+obj1.linguegens[0].web
+obj1.linguegens[0].web[0]
+
+
+=========================================
+
+
 // ADICIONAR METODO AO OBJETO
 
 reinaldo.getAnoNascimento = function() {
@@ -595,4 +893,107 @@ const u1 = new User('Rei', 44)
 u1.configAnoNasc()
 console.log(u1)
 
+// ====================
 
+Modelo Contrato Webs >> 
+https://github.com/rafaelrodrigoperes/modelo-contrato
+
+// ====================
+PORCENTAGEM
+<script>
+
+  valorEmprestimo = Number(prompt("Qual o valor do emprestimo ? "))
+
+  taxaAcrescimo = 20
+
+  emprestimoComTaxa = (valorEmprestimo * taxaAcrescimo) / 100
+
+  emprestimoAtualizado = emprestimoComTaxa + valorEmprestimo
+
+  alert(`O valor total do seu emprestimo ficou em R$ ${emprestimoAtualizado} `)
+
+  parcelasDesejadas = Number(prompt(" Quer dividir entre quantas parcelas ? "))
+
+  parceladoApagar = emprestimoAtualizado / parcelasDesejadas
+
+  alert(`Você pagará ${parcelasDesejadas} parcelas de R$ ${parceladoApagar}`)
+
+</script>
+
+<script>
+
+  // DESCONTO PORCENTAGEM BRASIL
+
+  preco = Number(prompt("Qual o preço do produto em R$ "))
+  taxa = 60
+
+  imposto = (preco * taxa) / 100
+
+  alert(`O imposto será de R$ ${imposto.toLocaleString('pt-BR', {minimumFractionDigits: 2})} `)
+
+
+  /*
+  Para saber a porcentagem de um VALOR :
+  VALOR * %DESEJADA / 100
+  EX: 30% DE 1000 --> 
+  1000 vezes 30 dividido por 100 >> 
+  "Ai vem a expressao 30 por cento alusão a 30%"
+  
+  */
+</script>
+
+<script>
+  // DESCONTO PORCENTAGEM DOLAR
+
+  preco = Number(prompt("Qual o preço do produto em Dolar: U$$ "))
+  taxa = 60
+
+  imposto = (preco * taxa) / 100
+
+  alert(`O imposto será de U$$ ${imposto.toLocaleString('en-US', {minimumFractionDigits: 2})} `)
+
+
+  /*
+  Para saber a porcentagem de um VALOR :
+  VALOR * %DESEJADA / 100
+  EX: 30% DE 1000 --> 
+  1000 vezes 30 dividido por 100 >> 
+  "Ai vem a expressao 30 por cento alusão a 30%"
+  
+  */
+</script>
+
+
+// ====================
+YOUTUBER
+Microfone Lapela :
+200,00 -- Sony ECM - CS3
+https://m.casasbahia.com.br/microfone-ecm-cs3-sony-lapela-11033225.html?utm_medium=cpc&utm_source=googledisplay&IdSku=11033225&idLojista=37749
+...........................
+// ====================
+
+
+
+HADWARE
+Tamanho em mega bit 1.024
+Se quero tirar 50 giga de um disco faço esses  1.024 x 50 = 51200  (51.200 GB a dispor)
+..............................
+BIOS  HP  DA DAY  ...
+Sair tecla :: F10
+Em caso de Dual boot  : 
+Secure Boot -- deixar Disable -- 
+UEFI/ Legacy boot  ;; Pra instalar eDualBioot deixar em UEFI
+para iniciar a maquina deixar em Legacy para mostrar loaders do dual boot
+
+.....................................................
+Notebook Day : Intel(R) Core(TM)2 CPU  T5500  @1.66 GHz  1.67 GHz
+Memoria : 2,00 gb  HD SATA 74 GB
+Windows e poucos arquivos tao consumindo  56 gb e sobrando 18 gb
+
+Sistema 32 bits , processador com base em x64
+(  Pode instalar programas e sistema em 64 bits )
+..............................................................................
+Meu Notebook
+Samsung = BootPEndrive :: apertando o Delete
+Pendrive Botavel Ventoy no pendrive vermelho SanDisk
+..............................................................................
