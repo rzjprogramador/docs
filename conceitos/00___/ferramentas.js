@@ -3,7 +3,7 @@
   mapa_mental: [
     {
       nome: `mindmeister`,
-      link: `https://www.mindmeister.com/`,
+      link: `https://www.mindmeister.com/folders`,
       acesso: `GOOGLE rzjprogramador`,
 
       nome: `mindmup`,
