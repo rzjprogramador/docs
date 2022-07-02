@@ -49,3 +49,12 @@ instalar_ultima_versao_python: `
   // Remove the package:
    sudo apt-get remove --purge python<VERSAO DESEJADA REMOVER>
 }
+
+{
+  interpretador_python: {
+
+    opiniao: `
+    No VS Code, do lado inferior esquerdo deve aparecer algo como "Python 3.x.x 64bit" clique em cima, em seguida irá aparecer na tela uma janela escrito "Selecionar interpretador", então você poderá escolher qual das versões instaladas quer utilizar. Pelo que eu testei aqui, a versão que está de fato sendo utilizada é a que aparece do lado inferior esquerdo, e não a mostrada quando se dá o comando "python --version"
+    `,
+  }
+}
