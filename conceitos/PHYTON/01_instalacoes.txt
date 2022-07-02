@@ -1,0 +1,51 @@
+
+ver_versao: `python3 --version`,
+
+site_oficial: `www.python.org`,
+
+ver_onde_esta_instalado: `which python3`,
+
+importante: `
+Não tente desinstalar a versão default (2.7) no Linux ou Mac, pois pode invalidar seu uso.
+`,
+
+instalar_ultima_versao_python: `
+
+  // ADICIONAR REPOSITORIO PYTHON
+  sudo add-apt-repository ppa:deadsnakes/ppa
+
+  // ATUALIZAR O GERENCIADOR DE PACOTES DO LINUX
+  sudo apt-get update
+
+  // INSTALE O PYTHON PASSANDO A VERSAO DESEJADA
+  // ATUAL : JUNHO 2022 >> VERSAO :: 3.10.5
+  sudo apt-get install python3.10
+
+`,
+
+{
+  pip_gerenciador_de_pacotes: {
+    instalar: `sudo apt install python3-pip`,
+    ver_versao_pip: `pip -V`,
+    ver_versao_todos_pacotes_instalados_pelo_pip: `pip freeze`,
+    atualizar+versao_pip: `pip install -U pip --user`,
+  }
+
+}
+
+//
+
+{
+  remover: `Remover versao python`,
+
+  sequencia_de_comandos_remocao: `
+  
+  // Remove the repository:
+    sudo add-apt-repository --remove ppa:fkrull/deadsnakes
+
+  // Refresh apt cache:
+   sudo apt-get update
+
+  // Remove the package:
+   sudo apt-get remove --purge python<VERSAO DESEJADA REMOVER>
+}
