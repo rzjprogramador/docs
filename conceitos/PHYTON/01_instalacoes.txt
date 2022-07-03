@@ -29,6 +29,20 @@ instalar_ultima_versao_python: `
     ver_versao_pip: `pip -V`,
     ver_versao_todos_pacotes_instalados_pelo_pip: `pip freeze`,
     atualizar+versao_pip: `pip install -U pip --user`,
+  },
+
+  poetry_gerenciador_pacotes: {
+    doc: `https://python-poetry.org/docs/`,
+    instalacao: `curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 -`,
+
+    ver_versao: `poetry --version`,
+
+    add_poetry_ao_path_linux: `source $HOME/.poetry/env`,
+
+  },
+
+  projetos_com_poetry: {
+    criar_projeto: `poetry new <NOME_PROJETO>`,
   }
 
 }
