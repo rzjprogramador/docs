@@ -5,5 +5,5 @@
   testar: Modalidade modalidade Cantar cantar
   `;
 
-  mostrar_barra_menu_bar_do_topo: 'tecla Alt -- ou  view/appearence/show menu bar',
+  mostrar_barra_menu_bar_do_topo_e_rodape: 'tecla Alt -- ou  view/appearence/show menu bar ... a barra do rodape é show Status Bar',
 }
