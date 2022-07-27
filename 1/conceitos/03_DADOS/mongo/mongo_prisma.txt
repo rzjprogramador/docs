@@ -1,0 +1,5 @@
+doc: https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/mongodb/introspection-typescript-mongodb
+
+comandos_mongo_prisma: {
+  apos_modelar_modelo_gerar_tipagem_prisma: 'yarn prisma generate'
+}

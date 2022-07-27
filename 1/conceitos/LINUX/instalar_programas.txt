@@ -1,0 +1,23 @@
+
+msql workbanch: {
+  instalar: '
+  log login conta oracle Rzj:
+  rzjprograamdor@gmail :: Rzj302010@
+
+  baixar no site oficial: https://dev.mysql.com/downloads/file/?id=510447
+
+  // atualizar instalar do sistema:
+  sudo apt-get update
+
+  // ver versao do meu sistema: // resposta: 20.04
+  lsb_release -rs
+
+
+  // BAIXAR VIA APPIMAGE
+  wget https://apprepo.de/appimage/download/mysql-workbench --output-document=MySQLWorkbench.AppImage
+chmod +x ./MySQLWorkbench.AppImage
+./MySQLWorkbench.AppImage
+
+  
+  ',
+}

@@ -12,3 +12,5 @@ encontrar vscode instalado no linux :
 /home/rzj/.vscode
 
 encontrar extensoes vscode :: ~/.vscode/extensions
+
+dar_permissao_escrita_arquivo_via_terminal: 'sudo chmod +x <ARQUIVO> ou Manualmente clicando com a esquerda no arquivo permissao/escriat e leitura',

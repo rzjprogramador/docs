@@ -12,8 +12,13 @@
   "editor.matchBrackets": "never",
   "workbench.panel.defaultLocation": "bottom",
   "git.autofetch": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode", // EDITOR PADRAO VSCODE
 
+  // FORMATACAO CODIGO
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma",
     "editor.formatOnSave": true
@@ -88,7 +93,6 @@
   "editor.fontFamily": "'Operator Mono Lig Book', 'SF Mono', Consolas, 'Source Code Pro', 'Dank Mono', 'Fira Code', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New', Courier, Monaco, monospace",
   "editor.glyphMargin": false,
   "editor.fontLigatures": false,
-  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll": true
@@ -239,4 +243,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.ignoreRebaseWarning": true
+ 
 }
