@@ -1,0 +1,102 @@
+{
+  // RZJ
+  "workbench.colorCustomizations": {
+    "tab.activeBackground": "#250069" /* tabs superior ativa */
+  },
+
+  "files.autoSave": "afterDelay",
+  "editor.lineHeight": 24,
+  "update.mode": "none",
+  "zenMode.silentNotifications": true,
+  "editor.wordWrap": "on",
+  "editor.matchBrackets": "never",
+  "workbench.panel.defaultLocation": "bottom",
+  "git.autofetch": true,
+
+  // EDITOR
+  "editor.rulers": [79, 120],
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 16,
+  "editor.fontFamily": "'Operator Mono Lig Book', 'SF Mono', Consolas, 'Source Code Pro', 'Dank Mono', 'Fira Code', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New', Courier, Monaco, monospace",
+
+  // TERMINAL
+  "terminal.integrated.fontSize": 14,
+
+// Workbench
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.labelFormat": "short",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.enablePreview": false,
+  "workbench.list.smoothScrolling": true,
+  "workbench.colorTheme": "OM Theme (Night Owl Italic)",
+
+   // Git
+   "git.enableSmartCommit": true,
+   "diffEditor.ignoreTrimWhitespace": true,
+
+    // Debug
+  "debug.console.fontSize": 18,
+
+  // FORMATACAO CODIGO
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.formatOnSave": true
+  },
+
+
+  // Code runner
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.ignoreSelection": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.runInTerminal": true,
+  "code-runner.preserveFocus": false,
+  "code-runner.executorMap": {
+    "python": "python3 -u",
+    "code-runner.clearPreviousOutput": false,
+    "typescript": "npx ts-node --files --transpile-only -r tsconfig-paths/register",
+    ".js": "clear && node"
+  },
+
+  // Material icon theme extension
+  "material-icon-theme.hidesExplorerArrows": true,
+  "material-icon-theme.folders.theme": "classic",
+  "material-icon-theme.folders.color": "#6273a6",
+
+  // CSpell checker extension
+  "cSpell.enabled": false,
+  "cSpell.language": "en,pt,pt_BR",
+  "cSpell.enableFiletypes": ["shellscript"],
+
+  // XML Language Support by Red Hat
+  "redhat.telemetry.enabled": true,
+
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.ignoreRebaseWarning": true,
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.visible": true,
+  "workbench.sideBar.location": "right",
+
+  // PYTHON RZJ
+  "python.languageServer": "Pylance", // AVISO LINTER
+
+  // Javascript & TypeScript
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.validate.enable": false,
+  "javascript.updateImportsOnFileMove.enabled": "prompt",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "[javascript]": {
+    "editor.suggest.showKeywords": false
+  },
+}
