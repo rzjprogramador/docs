@@ -33,6 +33,7 @@
    // Git
    "git.enableSmartCommit": true,
    "diffEditor.ignoreTrimWhitespace": true,
+   "git.confirmSync": false,
 
     // Debug
   "debug.console.fontSize": 18,
