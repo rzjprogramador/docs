@@ -19,3 +19,6 @@
   tipo_instalacao: `devDependencies`,
   comando: `@types/node`,
 }
+
+atualizar node: https://dev.to/gustavo_nascimento/atualizando-o-node-js-para-a-sua-ultima-versao-1lec
+
